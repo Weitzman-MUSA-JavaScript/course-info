@@ -87,7 +87,7 @@ More thorough evaluation of and feedback on your work will come in the form of:
   * Mac and Linux each come with a full-featured terminal already installed
 * Git Clients
   * [GitHub Desktop](https://desktop.github.com/)
-  Visual Studio Code Git extensions
+  * Visual Studio Code Git extensions (built-in, though you may have to install `git` first; VS Code should walk you through the installation)
   * [Sublime Merge](https://www.sublimemerge.com/)
 * Node.js
   * [Node.js](https://nodejs.org/en/download/)
