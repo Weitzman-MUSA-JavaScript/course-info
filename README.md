@@ -11,12 +11,12 @@
   * Junyi Yang, junyiy@design.upenn.edu
 * **Office Hours**:
   * Mjumbe:
-    - Wednesday 10AM-1PM on campus
+    - Wednesday 10AM-1PM in the RDDSx space, Van Pelt Library
     - By appointment
   * Junyi:
     - TBD
 * **Need help?**
-  * [Canvas](https://canvas.upenn.edu/courses/1744245)
+  * [Slack](https://join.slack.com/t/musa-tools-track/shared_invite/zt-2pk32c0ki-zyGv0UG1GIo9QolLcAQsqw)
   * Stack Overflow is your friend!
 
 
@@ -87,7 +87,7 @@ More thorough evaluation of and feedback on your work will come in the form of:
   * Mac and Linux each come with a full-featured terminal already installed
 * Git Clients
   * [GitHub Desktop](https://desktop.github.com/)
-  * Visual Studio Code Git extensions (built-in, though you may have to install `git` first; VS Code should walk you through the installation)
+  * Visual Studio Code Git extensions (built-in, though you may have to [install `git` first](https://github.com/git-guides/install-git); VS Code should walk you through the installation)
   * [Sublime Merge](https://www.sublimemerge.com/)
 * Node.js
   * [Node.js](https://nodejs.org/en/download/)
@@ -99,7 +99,7 @@ More thorough evaluation of and feedback on your work will come in the form of:
 * [Javascript.info](https://javascript.info/) - An excellent linear reference -- like a text book for JavaScript.
 * [FreeCodeCamp](https://www.freecodecamp.org/learn/) - Lots of exercises; courses in "Responsive Web Design", "Basic JavaScript", "ES6", and "Data Visualization" would be particularly useful for this class.
 * [Eloquent Javascript](http://eloquentjavascript.net/) - This is a free book with some _advanced_ content. As you think about the application you might like to build for your final, the chapters on HTML forms, drawing with javascript, building a game, and constructing your own painting application will push further than we can in class.
-* [Map-based Web Application Examples](webmap-examples.md)
+* [Map-based Web Application Examples](resources/webmap-examples.md)
 
 There will be additional resources on topics covered in the class in the _[resources/](resources/)_ folder.
 
