@@ -16,7 +16,7 @@
   * Junyi:
     - TBD
 * **Need help?**
-  * [Slack](https://join.slack.com/t/musa-tools-track/shared_invite/zt-2pk32c0ki-zyGv0UG1GIo9QolLcAQsqw)
+  * [Slack](https://musa-tools-track.slack.com/)
   * Stack Overflow is your friend!
 
 
