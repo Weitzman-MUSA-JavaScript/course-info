@@ -1,7 +1,7 @@
 ## Videos
 
-* Designing for the user: Coming Soon!
-* Introduction to HTML: Coming Soon!
+* Designing for the user: ([video](https://docs.google.com/presentation/d/1V9VtReNTHLSYCwVcq84OpT2LCghTapSXtJ7IGUIL0E0/edit?usp=sharing), ~8 min) ([slides](https://docs.google.com/presentation/d/1XoJzoDlC32x64kwSueUPlcn8iT4nBMp_XCCfnQUZhWs/edit?usp=sharing))
+* Introduction to HTML: ([video](https://share.descript.com/view/Y8DeQS27PTm), ~31 min) ([slides](https://docs.google.com/presentation/d/1V9VtReNTHLSYCwVcq84OpT2LCghTapSXtJ7IGUIL0E0/edit?usp=sharing))
 * Introduction to CSS: Coming Soon!
 * Web Accessibility: Coming Soon!
 
