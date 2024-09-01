@@ -17,4 +17,10 @@ From [JavaScript.info](https://javascript.info/):
 
 ## References
 
-- Intro to CSS - An "inch" in CSS is usually equal to 96 pixels ([Smashing Magazine, _There Is No Such Thing As A CSS Absolute Unit_](https://www.smashingmagazine.com/2021/07/css-absolute-units/))
+- Designing for Users
+  - [18F User Experience Design Guide](https://guides.18f.gov/ux-guide/)
+  - [18F Personas Method Card](https://guides.18f.gov/methods/decide/personas/)
+  - [18F Wireframing Method Card](https://guides.18f.gov/methods/make/wireframing/)
+  - [18F Prototyping Method Card](https://guides.18f.gov/methods/make/prototyping/)
+- Intro to CSS
+  - An "inch" in CSS is usually equal to 96 pixels ([Smashing Magazine, _There Is No Such Thing As A CSS Absolute Unit_](https://www.smashingmagazine.com/2021/07/css-absolute-units/))
