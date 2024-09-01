@@ -14,7 +14,9 @@
     - Wednesday 10AM-1PM in the RDDSx space, Van Pelt Library
     - By appointment
   * Junyi:
-    - TBD
+    - Tuesday 1PM-3PM on Zoom (Use [this link](https://calendly.com/yjymonica2012/junyi-musa-javascript-office-hour) to schedule)
+    - The above schedule may be moved to another day if there is a schedule conflict. (Check the link above for the most up-to-date schedule)
+    - By appointment
 * **Need help?**
   * [Slack](https://musa-tools-track.slack.com/)
   * Stack Overflow is your friend!
