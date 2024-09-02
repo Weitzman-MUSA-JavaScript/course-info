@@ -1,6 +1,6 @@
 ## Videos
 
-* Designing for the user: ([video](https://docs.google.com/presentation/d/1V9VtReNTHLSYCwVcq84OpT2LCghTapSXtJ7IGUIL0E0/edit?usp=sharing), ~8min) ([slides](https://docs.google.com/presentation/d/1XoJzoDlC32x64kwSueUPlcn8iT4nBMp_XCCfnQUZhWs/edit?usp=sharing))
+* Designing for the user: ([video](https://share.descript.com/view/xMB36Pljo2i), ~8min) ([slides](https://docs.google.com/presentation/d/1XoJzoDlC32x64kwSueUPlcn8iT4nBMp_XCCfnQUZhWs/edit?usp=sharing))
 * Introduction to HTML: ([video](https://share.descript.com/view/Y8DeQS27PTm), ~31min) ([slides](https://docs.google.com/presentation/d/1V9VtReNTHLSYCwVcq84OpT2LCghTapSXtJ7IGUIL0E0/edit?usp=sharing))
 * Introduction to CSS: ([video](https://share.descript.com/view/lu04aNn2QZa), ~1h 10min)
 * Web Accessibility: Coming Soon!
