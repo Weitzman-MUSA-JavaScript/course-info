@@ -24,3 +24,12 @@ From [JavaScript.info](https://javascript.info/):
   - [18F Prototyping Method Card](https://guides.18f.gov/methods/make/prototyping/)
 - Intro to CSS
   - An "inch" in CSS is usually equal to 96 pixels ([Smashing Magazine, _There Is No Such Thing As A CSS Absolute Unit_](https://www.smashingmagazine.com/2021/07/css-absolute-units/))
+
+## Practice
+
+- Choose a data domain for your projects. Slack it to me. Start to find data sources. Slack those to me as well.
+- Install the Axe developer tools
+- Stub out an about page for your story map, explaining the data domain. Should have:
+  - A title, and headers for each section
+  - A persona explaining who you're targeting with content
+  - No accessibility checker errors
