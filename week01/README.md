@@ -27,6 +27,10 @@ From [JavaScript.info](https://javascript.info/):
 
 ## Practice
 
+- Set up your story map project
+  - Fork the repository
+  - Clone the repository
+  - Ensure VS Code (or whatever code editor) is configured with linters as desired
 - Choose a data domain for your projects. Slack it to me. Start to find data sources. Slack those to me as well.
 - Install the Axe developer tools
 - Stub out an about page for your story map, explaining the data domain. Should have:
