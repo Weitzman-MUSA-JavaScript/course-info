@@ -1,0 +1,31 @@
+html {
+
+}
+
+.underlay {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50vh;
+  background-color: yellow;
+}
+
+main {
+  position: relative;
+  /* width: 50%; */
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0 128 0);
+  background-color: rgb(0 128 0 / 20%);
+}
+
+main > p:first-of-type {
+  width: 50%;
+  border: 1px solid #ff0000;
+  background-color: #ff000010;
+}
+
+main > p:nth-of-type(2) {
+  width: 75%;
+  border: 1px solid blue;
+}
