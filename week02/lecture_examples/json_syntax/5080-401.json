@@ -1,0 +1,13 @@
+{
+    "name": "Public Policy Analytics",
+    "section": 401,
+    "schedule_type": "Lecture",
+    "instruction_method": "In Class",
+    "campus": "Philadelphia",
+    "location": "Meyerson Hall B3",
+    "location_code": "MEYH B3",
+    "credit": 1,
+    "scheduled_with": "CPLN 5920, section 401",
+    "maximum_enrollment": 31,
+    "full": false
+}

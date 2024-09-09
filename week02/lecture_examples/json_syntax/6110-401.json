@@ -1,0 +1,13 @@
+{
+    "name": "JavaScript Programming for Planners and Designers",
+    "section": 401,
+    "schedule_type": "Lecture",
+    "instruction_method": "In Class",
+    "campus": "Philadelphia",
+    "location": "Williams Hall 214",
+    "location_code": "WILL 214",
+    "credit": 1,
+    "scheduled_with": "CPLN 6920, section 401",
+    "maximum_enrollment": 25,
+    "full": true
+}

@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.19267, 39.95223]
+      },
+      "properties": {
+        "name": "Meyerson Hall",
+        "location": "201 S. 34th Street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-75.1922, 39.95275],
+          [-75.19512, 39.95165],
+          [-75.19549, 39.95156],
+          [-75.19567, 39.95156],
+          [-75.19589, 39.95148],
+          [-75.19607, 39.95151],
+          [-75.19638, 39.95133],
+          [-75.19721, 39.95106]
+        ]
+      },
+      "properties": {
+        "name": "Woodland Walk",
+        "location": "34th-37th Streets, between Walnut and Spruce"
+      }
+    }
+  ]
+}
