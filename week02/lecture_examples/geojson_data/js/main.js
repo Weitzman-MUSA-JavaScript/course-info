@@ -7,7 +7,7 @@ const map = L.map(element, { maxZoom: 18 });
 //
 // Add a base layer to the map
 //
-const mapboxStyle = "mapbox/streets-v11";
+const mapboxStyle = "mapbox/streets-v12";
 const mapboxKey = "pk.eyJ1IjoibWp1bWJlLXRlc3QiLCJhIjoiY2w3ZTh1NTIxMTgxNTQwcGhmODU2NW5kaSJ9.pBPd19nWO-Gt-vTf1pOHBA";
 
 const baseLayer = L.tileLayer(
@@ -30,24 +30,26 @@ const dataLayer = L.geoJSON(data, {
       : {},
     interactive: true,
 });
+dataLayer.bindTooltip((layer) => layer.feature.properties.name);
 dataLayer.addTo(map);
-dataLayer.addEventListener("mouseover", (event) => {
-  const layer = event.layer;
-  const feature = event.layer.feature;
-  const latlng = event.latlng;
 
-  layer.tooltip = (layer.tooltip || L.tooltip())
-    .setLatLng(latlng)
-    .setContent(feature.properties.name)
-    .addTo(map);
-});
+// dataLayer.addEventListener("mouseover", (event) => {
+//   const layer = event.layer;
+//   const feature = event.layer.feature;
+//   const latlng = event.latlng;
 
-dataLayer.addEventListener("mouseout", (event) => {
-  const layer = event.layer;
-  if (layer.tooltip) {
-    layer.tooltip.removeFrom(map);
-  }
-});
+//   layer.tooltip = (layer.tooltip || L.tooltip())
+//     .setLatLng(latlng)
+//     .setContent(feature.properties.name)
+//     .addTo(map);
+// });
+
+// dataLayer.addEventListener("mouseout", (event) => {
+//   const layer = event.layer;
+//   if (layer.tooltip) {
+//     layer.tooltip.removeFrom(map);
+//   }
+// });
 
 //
 // Fit the map to the bounds of the GeoJSON data
