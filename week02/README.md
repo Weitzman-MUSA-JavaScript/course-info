@@ -1,7 +1,7 @@
 ## Videos
 
 * Intro to Web Maps -- ([video](https://share.descript.com/view/c5q4jtZliwP), ~52min)
-* The GeoJSON Data Format -- ([video](https://share.descript.com/view/8DXBwN2Lg67), ~42min)
+* The GeoJSON Data Format -- ([video](https://share.descript.com/view/8DXBwN2Lg67), ~46min)
 
 ## Readings
 
