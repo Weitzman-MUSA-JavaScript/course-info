@@ -9,7 +9,7 @@ From [JavaScript.info](https://javascript.info/):
 * Part 1, Chapter 4 -- Objects: the basics **(only section 4.1 is necessary)**
 * Part 1, Chapter 5 -- Data types **(specifically sections 5.2, 5.3, and 5.4 -- the rest are optional)**
 
-From [Introduction to Web Mapping](https://geobgu.xyz/web-mapping2/):
+**Optional:** From [Introduction to Web Mapping](https://geobgu.xyz/web-mapping2/):
 * Chapter 7 -- GeoJSON, https://geobgu.xyz/web-mapping2/geojson-1.html
 
 ## References
