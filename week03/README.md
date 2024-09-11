@@ -11,3 +11,6 @@ In this exercise you'll create a simple choropleth map to display county-level e
 6.  Update the features' styles to reduce the filled opacity based on the "evenness" of the vote. For example, if the winning candidate won by a large margin, the county should be more opaque. If the winning candidate won by a small margin, the county should be less opaque.
 
     The Javascript [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) functions may be useful to you. For example, to get the absolute value of a number, you can use `Math.abs()`. To get the maximum of two numbers, you can use `Math.max()`. To get the minimum of two numbers, you can use `Math.min()`.
+
+As an example, my map looks like this:
+![Example Results Map](practice_files/example_results_map.png)
