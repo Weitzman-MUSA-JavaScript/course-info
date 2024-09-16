@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Story</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <h1>Story Map</h1>
+    <p>This is a sample scrolling story map (or "scrollytelly" as some call it). It is directed at people learning JavaScript and HTML/CSS for the first time.</p>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <h2>Framing Information</h2>
+      This section contains some introductory content setting the stage for the spatial information that is to come. Maybe there are some charts, maybe some pictures. Now that you have the context for the map, let's continue.
+    </section>
+
+    <div class="map-sticky-wrapper" id="map-section-1">
+      <div class="map-container">
+        <div class="map" id="map-1"></div>
+      </div>
+      <section class="slide-section">
+        <article class="slide" id="title-slide">
+          <h1>Story Map title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie hendrerit quam, efficitur vestibulum justo vehicula a.</p>
+          <p>Nullam et metus eu eros facilisis commodo. Vivamus elementum nulla nisi, eget fermentum mauris placerat sed.</p>
+        </article>
+
+        <article class="slide" id="second-slide">
+          <h2>Second slide title</h2>
+          <p>Nunc dapibus arcu vel sapien rutrum rhoncus. Pellentesque dignissim, nisi ac pellentesque egestas, urna risus varius leo, eget efficitur risus tortor vel magna.</p>
+          <p>Suspendisse sed posuere velit, ac gravida elit. Nam viverra vehicula nisl ut gravida.</p>
+        </article>
+
+        <article class="slide" id="third-slide">
+          <h2>Third slide title</h2>
+          <p>Pellentesque nunc tellus, euismod sed mauris vitae, volutpat viverra metus. Nunc vel nisl massa. Nunc ullamcorper interdum vehicula. Ut at mi congue, lacinia eros eget, gravida libero. Vivamus et cursus lorem. Nulla elementum neque a nunc sollicitudin, eget maximus turpis egestas. In hac habitasse platea dictumst. Maecenas aliquet nibh tempor leo pretium, vel congue dui malesuada. Sed non felis porttitor, laoreet ante ac, volutpat nibh. Sed tincidunt eleifend felis, et porttitor dui interdum scelerisque. Mauris eget eros pharetra, pretium justo nec, commodo tellus. Duis orci sem, vehicula a leo eget, lacinia venenatis neque. Duis purus enim, volutpat dapibus arcu eget, aliquam malesuada nulla. Duis nisi eros, semper eu bibendum condimentum, vehicula vel felis. Integer a lacus dictum, tempor nulla at, ornare ante.</p>
+        </article>
+      </section>
+    </div>
+
+    <section class="intro-section" id="map-section-2">
+      <h2>More Framing Information</h2>
+      This section contains some more context setting the stage for the next set of information that is to come. Maybe there are some more charts, maybe some pictures. Now that you have the context for the map, let's continue.
+    </section>
+
+    <div class="map-sticky-wrapper" id="map-section-2">
+      <div class="map-container">
+        <div class="map" id="map-2"></div>
+      </div>
+      <section class="slide-section">
+        <article class="slide" id="third-slide">
+          <h2>Third slide title</h2>
+          <p>Pellentesque nunc tellus, euismod sed mauris vitae, volutpat viverra metus. Nunc vel nisl massa. Nunc ullamcorper interdum vehicula. Ut at mi congue, lacinia eros eget, gravida libero. Vivamus et cursus lorem. Nulla elementum neque a nunc sollicitudin, eget maximus turpis egestas. In hac habitasse platea dictumst. Maecenas aliquet nibh tempor leo pretium, vel congue dui malesuada. Sed non felis porttitor, laoreet ante ac, volutpat nibh. Sed tincidunt eleifend felis, et porttitor dui interdum scelerisque. Mauris eget eros pharetra, pretium justo nec, commodo tellus. Duis orci sem, vehicula a leo eget, lacinia venenatis neque. Duis purus enim, volutpat dapibus arcu eget, aliquam malesuada nulla. Duis nisi eros, semper eu bibendum condimentum, vehicula vel felis. Integer a lacus dictum, tempor nulla at, ornare ante.</p>
+        </article>
+
+        <article class="slide" id="second-slide">
+          <h2>Second slide title</h2>
+          <p>Nunc dapibus arcu vel sapien rutrum rhoncus. Pellentesque dignissim, nisi ac pellentesque egestas, urna risus varius leo, eget efficitur risus tortor vel magna.</p>
+          <p>Suspendisse sed posuere velit, ac gravida elit. Nam viverra vehicula nisl ut gravida.</p>
+        </article>
+
+        <article class="slide" id="title-slide">
+          <h2>The End</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie hendrerit quam, efficitur vestibulum justo vehicula a.</p>
+          <p>Nullam et metus eu eros facilisis commodo. Vivamus elementum nulla nisi, eget fermentum mauris placerat sed.</p>
+        </article>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Created for MUSA 6110.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>

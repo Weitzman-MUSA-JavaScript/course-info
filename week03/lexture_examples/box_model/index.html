@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Box Model Examples</title>
+    <style>
+      * {
+        border-width: 4px;
+        /* border-width: 0; */
+        border-style: groove;
+        border-color: red;
+
+        box-sizing: border-box;
+      }
+
+      p {
+        padding: 1rem;
+        position: relative;
+      }
+
+      div {
+        padding-top: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 4rem;
+
+        border-right-color: blue;
+        border-bottom-color: green;
+        border-left-color: yellow;
+
+        width: 100%;
+
+        box-sizing: border-box;
+      }
+
+      em {
+        display: block;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+
+        position: fixed;
+        top: 10px;
+        left: 100px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        width: 10rem;
+        text-align: center;
+        background-color: silver;
+        padding: 0.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
+        <li><a href="https://cssgridgarden.com/">Grid Garden</a></li>
+        <li><a href="https://www.github.com/Weitzman-MUSA-JavaScript">Course GitHub</a></li>
+      </ul>
+    </nav>
+
+    Here is some text, <p>And here is text in a block level element (which most elements are by default).</p> Here is some more text, <div>And this is another block level element with text.</div> And here is yet more text.
+
+    <p>Here is one more paragraph. I'll put a bunch of content in this paragraph &mdash; at least enough for it to wrap onto a new line. <em>I think what I want to emphasize is that the em tag should be seen as useful for italcizing text. Many browsers italicize it by default, but you could choose to override that. Onlu use em if you want to emphasize text (think about other types of user agents besides browsers too). Semantics matter.</em> Or maybe I'll go for two new lines, just to be sure I have enough content to demonstrate some necessary things.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit orci a laoreet porttitor. Sed dignissim nec lectus ut semper. Pellentesque finibus neque eget fermentum rhoncus. Sed posuere augue eu nunc tristique ornare. Quisque eros leo, faucibus vitae viverra nec, scelerisque eu massa. Duis at ultricies risus, ac luctus ante. Cras mattis iaculis enim. Nullam tortor justo, luctus non rutrum vitae, venenatis et ante. Aenean quis ex purus. Curabitur elementum, felis et pellentesque euismod, augue arcu suscipit nulla, ac dapibus ligula magna vitae leo. Vestibulum et hendrerit lorem. Nunc pulvinar nibh a dui ultricies, in sagittis urna lobortis. Nullam ut tortor sed tortor mattis finibus.</p>
+
+    <p>Suspendisse rutrum sem sit amet porttitor viverra. Pellentesque eu efficitur nulla, id semper augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam accumsan lorem eu sapien semper posuere. In porta tristique nibh at pellentesque. Donec sodales erat eget elit pulvinar, molestie ultricies tellus mattis. Aenean pellentesque odio ultricies ligula scelerisque ullamcorper. Pellentesque porttitor leo at lacus tempor semper. Aliquam libero ligula, vulputate sit amet massa a, vulputate feugiat lacus. In sed est ullamcorper sem tincidunt consequat tempus vel lectus. Aliquam vel pretium elit.</p>
+
+    <p>Morbi eu neque vitae sapien laoreet interdum. Nullam a mauris nec leo lobortis porttitor porttitor vel leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut in laoreet purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus a elementum metus, at suscipit velit. In hac habitasse platea dictumst. Phasellus facilisis nisl ac blandit pellentesque. Quisque vel cursus augue. In efficitur pulvinar nunc dapibus rutrum. Cras est lacus, efficitur non arcu ut, dapibus facilisis lacus. In ultricies nunc sit amet fermentum posuere. Nam ut placerat nunc, vitae pretium nunc.</p>
+
+    <p>Nullam gravida a erat id commodo. In efficitur magna vitae lorem vehicula pretium. Nam eget aliquam arcu, non interdum leo. Nunc porttitor convallis nibh, in varius erat imperdiet eu. Nullam posuere dui et congue mollis. Praesent in vehicula mauris. Etiam fringilla dignissim velit, vitae pulvinar nibh pharetra in. Pellentesque ac augue non risus tristique vestibulum nec ac nisl. Curabitur faucibus, diam porttitor accumsan volutpat, mi felis dignissim risus, tempor condimentum libero augue commodo ante. Cras auctor, arcu ut pellentesque iaculis, tortor ante luctus velit, ultrices imperdiet arcu mi ut nisi. Fusce euismod elit sapien, id gravida risus rutrum vitae. Donec porttitor, ante ut ultrices dapibus, dui enim finibus tortor, eu vehicula dolor nisl id sem. Fusce nec lorem a neque euismod tincidunt a quis tortor. Ut vel viverra massa. In et molestie diam.</p>
+
+    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent lacinia fermentum massa sit amet fringilla. Nam accumsan ac neque et interdum. Vivamus ligula risus, lacinia sit amet erat sed, eleifend vulputate odio. Pellentesque metus dui, tempus at nisl ut, tempus dignissim lectus. Morbi placerat turpis ante, vitae iaculis neque porttitor eu. Morbi quis lobortis sem, eget ullamcorper nunc. Morbi eget metus interdum, volutpat magna in, efficitur magna. Nam ac diam non urna sollicitudin egestas at nec ligula. Ut vehicula arcu eros, mattis gravida est elementum non. Vestibulum euismod eu nisi eu facilisis. Mauris eu elit ipsum.</p>
+  </body>
+</html>

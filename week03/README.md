@@ -14,3 +14,17 @@ In this exercise you'll create a simple choropleth map to display county-level e
 
 As an example, my map looks like this:
 ![Example Results Map](practice_files/example_results_map.png)
+
+## Videos
+
+- Introduction to CSS Layouts - ([video](https://share.descript.com/view/epmjwwWCJPj), ~44 min)
+- SVG, Canvas, and Map Accessibility - _Coming Soon_
+
+## References
+
+- MDN Inline Elements - https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics _(Anything else on that page that's not in the inline text semantics section is a block-level element)_
+- Flexbox Froggy - https://flexboxfroggy.com/
+- Digital Ocean Flexbox Cheat Sheet - https://www.digitalocean.com/community/cheatsheets/css-flexbox
+- CSS Tricks Flexbox Guide - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- Grid Garden - https://cssgridgarden.com/
+- Digital Ocean Grid Layout Intro - https://www.digitalocean.com/community/tutorials/css-css-grid-layout-intro
