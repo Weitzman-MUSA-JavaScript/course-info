@@ -7,4 +7,4 @@ In this exercise you'll build on the choropleth map that you created in the prev
    - What interactive UI components are useful for users (if any besides the map)?
    - What happens when a user selects a county on the map?
 1. Choose a layout from https://www.mapuipatterns.com/
-2. Create a mock up of the dashboard that includes the map and a panel that shows detailed information about the selected county.
+2. Create a mock up of the dashboard that includes the elements you've discussed.
