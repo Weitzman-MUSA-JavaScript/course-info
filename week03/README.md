@@ -28,3 +28,4 @@ As an example, my map looks like this:
 - CSS Tricks Flexbox Guide - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - Grid Garden - https://cssgridgarden.com/
 - Digital Ocean Grid Layout Intro - https://www.digitalocean.com/community/tutorials/css-css-grid-layout-intro
+- Design Patterns for Effective Map UX - https://www.mapuipatterns.com/
