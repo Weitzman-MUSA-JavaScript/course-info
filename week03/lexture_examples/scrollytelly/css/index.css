@@ -34,7 +34,7 @@ header, section, footer {
 }
 
 .slide {
-  margin-top: 90vh;
+  margin-top: 0;
   margin-bottom: 90vh;
   margin-left: auto;
   margin-right: 2rem;
@@ -55,7 +55,7 @@ header, section, footer {
 }
 
 .slide:last-child {
-  margin-bottom: 40vh;
+  margin-bottom: 10vh;
 }
 
 .slide-controls {
