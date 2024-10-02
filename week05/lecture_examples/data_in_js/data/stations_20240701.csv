@@ -1,0 +1,294 @@
+station_id,station_name,go_live_date,status
+3000,Virtual Station,4/23/2015,Active
+3004,Municipal Services Building Plaza,4/23/2015,Inactive
+3005,"Welcome Park, NPS",4/23/2015,Active
+3006,40th & Spruce,4/23/2015,Active
+3007,"11th & Pine, Kahn Park",4/23/2015,Active
+3008,Temple University Station,4/23/2015,Active
+3009,33rd & Market,4/23/2015,Active
+3010,15th & Spruce,4/23/2015,Active
+3011,38th & Powelton,4/23/2015,Inactive
+3012,21st & Catharine,4/23/2015,Active
+3013,6th & Fairmount,4/23/2015,Inactive
+3014,"21st & Winter, Franklin Institute",4/23/2015,Active
+3015,"4th & Walnut, NPS",4/23/2015,Active
+3016,"11th & Poplar, John F. Street Community Center",4/23/2015,Active
+3017,6th & Berks,4/23/2015,Active
+3018,12th & Filbert,4/29/2015,Active
+3019,6th & Race,4/29/2015,Active
+3020,University City Station,4/23/2015,Active
+3021,18th & JFK,4/23/2015,Active
+3022,Amtrak 30th Street Station,4/23/2015,Active
+3023,Rittenhouse Square,4/23/2015,Inactive
+3024,"43rd & Chester, Clark Park",4/23/2015,Active
+3025,11th & Washington,4/23/2015,Active
+3026,2nd & Lombard,4/23/2015,Active
+3027,"40th Street Station, MFL",4/23/2015,Inactive
+3028,4th & Bainbridge,4/23/2015,Active
+3029,36th & Sansom,4/23/2015,Active
+3030,Darien & Catharine,4/23/2015,Active
+3031,13th & Montgomery,4/23/2015,Active
+3032,23rd & South,4/23/2015,Active
+3033,10th & Chestnut,4/23/2015,Active
+3034,11th & Reed,4/23/2015,Active
+3035,Dornsife Center,7/31/2015,Active
+3036,2nd & Germantown,4/23/2015,Inactive
+3037,Pennsylvania Convention Center,4/29/2015,Active
+3038,The Children's Hospital of Philadelphia (CHOP),4/23/2015,Active
+3039,Broad & Girard,4/23/2015,Active
+3040,17th & Spring Garden,4/23/2015,Active
+3041,"Girard Station, MFL",4/23/2015,Active
+3043,"18th & Fernon, Aquinas Center",4/23/2015,Inactive
+3045,13th & Locust,4/28/2015,Inactive
+3046,2nd & Market,4/23/2015,Active
+3047,"Independence Mall, NPS",4/23/2015,Active
+3048,Broad & Fitzwater,4/23/2015,Inactive
+3049,Foglietta Plaza,4/23/2015,Active
+3050,9th & Arch,4/23/2015,Inactive
+3051,23rd & Fairmount,4/23/2015,Active
+3052,9th & Locust,4/23/2015,Active
+3053,Point Breeze & Tasker,4/23/2015,Active
+3054,Rodin Museum,4/23/2015,Active
+3055,8th & Market,4/28/2015,Active
+3056,Broad & Oxford,4/23/2015,Active
+3057,Philadelphia Museum of Art,4/23/2015,Active
+3058,20th & Fairmount,4/23/2015,Active
+3059,"Spring Garden Station, BSL",4/23/2015,Active
+3060,Free Library of Philadelphia - Central Library,4/23/2015,Active
+3061,23rd & Market,4/23/2015,Active
+3062,24th & Sansom,4/23/2015,Active
+3063,17th & Pine,4/23/2015,Active
+3064,"18th & Washington, Chew Playground",4/23/2015,Active
+3065,Girard & Hutchinson,4/23/2015,Active
+3066,19th & Lombard,4/23/2015,Active
+3067,"39th & Mt. Vernon, Mantua Haverford Community Center",4/23/2015,Active
+3068,Broad & Federal,4/23/2015,Active
+3069,4th & Christian,4/23/2015,Active
+3070,"Spring Garden Station, MFL",4/29/2015,Inactive
+3071,"32nd & Baring, Drexel Park",4/23/2015,Inactive
+3072,Front & Carpenter,4/23/2015,Active
+3073,9th & Spring Garden,4/28/2015,Active
+3074,44th & Walnut,4/28/2015,Active
+3075,Fairmount & Ridge,4/28/2015,Active
+3077,17th & Girard,4/29/2015,Active
+3078,19th & Market,4/23/2015,Active
+3086,Broad & Christian,6/10/2015,Active
+3088,3rd & Girard,10/20/2015,Active
+3093,33rd & Diamond,4/28/2016,Active
+3095,29th & Diamond,4/28/2016,Inactive
+3096,29th & Dauphin,4/29/2016,Active
+3097,"Berks Station, MFL",4/29/2016,Active
+3098,10th & Federal,5/2/2016,Active
+3099,4th & Washington,5/2/2016,Active
+3100,Moyamensing & Tasker,5/2/2016,Active
+3101,11th & South,5/2/2016,Active
+3102,Pennsylvania & Fairmount Perelman Building,5/3/2016,Active
+3103,"27th & Master, Athletic Recreation Center",5/3/2016,Inactive
+3104,34th & Mantua,5/3/2016,Active
+3105,Penn Treaty Park,5/3/2016,Inactive
+3106,33rd & Dauphin,5/5/2016,Active
+3107,33rd & Reservoir,5/4/2016,Active
+3108,15th & Market,5/4/2016,Inactive
+3109,Parkside & Girard,5/6/2016,Inactive
+3110,Del. River Trail & Penn St.,5/4/2016,Active
+3111,"Parkside & Belmont, Case Building",5/5/2016,Active
+3112,48th & Spruce,5/5/2016,Active
+3113,Philadelphia Zoo,5/6/2016,Active
+3114,22nd & Federal,5/5/2016,Active
+3115,"19th & Girard, PTTI",5/4/2016,Active
+3116,Barnes Foundation,12/14/2017,Active
+3117,ParkWest Town Center,4/15/2016,Active
+3118,"46th Street Station, MFL",4/25/2016,Active
+3119,42nd & Lancaster,4/25/2016,Active
+3120,31st & Girard,4/26/2016,Active
+3121,27th & Girard,4/26/2016,Inactive
+3122,"24th & Cecil B. Moore, Cecil B. Moore Library",4/27/2016,Inactive
+3123,22nd & Cecil B. Moore,4/27/2016,Active
+3124,Race Street Pier,3/31/2016,Active
+3125,15th & South,4/8/2016,Active
+3129,"The Children's Hospital of Philadelphia, Osler Circle",5/24/2016,Inactive
+3150,"15th & Castle, DiSilvestro Playground",6/7/2017,Active
+3152,"40th & Baltimore, Trolley Portal",6/5/2017,Active
+3153,"Thompson & Palmer, Adaire School",6/7/2017,Inactive
+3154,12th & Callowhill,6/7/2017,Active
+3155,7th & Fitzwater,9/26/2017,Active
+3156,20th & Market,6/8/2017,Active
+3157,"8th & Mifflin, Bok Building",6/8/2017,Active
+3158,Broad & Passyunk,6/8/2017,Active
+3159,38th & Spruce,6/6/2017,Active
+3160,38th & Market,6/6/2017,Active
+3161,30th Street Station East,6/6/2017,Active
+3162,27th & South,6/9/2017,Active
+3163,25th & Locust,6/9/2017,Active
+3164,12th & Passyunk,9/26/2017,Active
+3165,24th & Race SRT,9/27/2017,Active
+3166,Frankford & Belgrade,5/9/2018,Active
+3167,12th & Chestnut,1/24/2018,Inactive
+3168,20th & Sansom,12/13/2017,Active
+3169,2nd & Race,9/27/2017,Active
+3170,Grays Ferry & Pemberton,6/5/2017,Inactive
+3181,Crescent Park,6/26/2018,Active
+3182,17th & Sansom,10/17/2018,Active
+3183,15th & Kitty Hawk,6/19/2018,Active
+3184,Health Sciences Drive,11/1/2018,Active
+3185,11th & Market,9/28/2018,Active
+3186,12th & Normandy,6/19/2018,Inactive
+3187,20th & Race,9/25/2018,Active
+3188,"Broad & Pattison, BSL",6/19/2018,Active
+3190,17th & Locust,9/14/2018,Inactive
+3192,2nd & Fairmount,8/14/2018,Inactive
+3195,18th & JFK Curbside,4/6/2019,Inactive
+3196,25th & Diamond,4/18/2019,Active
+3197,Broad & Ritner,5/14/2019,Active
+3200,Ridge & Master,6/27/2019,Active
+3201,16th & Arch,9/10/2019,Active
+3202,16th & Chestnut,8/30/2019,Inactive
+3203,18th & Christian,11/7/2019,Active
+3204,17th & Green,11/14/2019,Active
+3205,17th & JFK,11/23/2019,Active
+3206,18th & Chestnut,8/29/2019,Inactive
+3207,34th & Chestnut,5/20/2020,Active
+3208,34th & Spruce,10/5/2019,Active
+3209,45th & Baltimore,9/11/2019,Active
+3210,Broad & Diamond,8/28/2019,Active
+3211,Corinthian & Poplar,2/6/2020,Active
+3212,Schuylkill Banks Pergola,10/9/2020,Active
+3213,Broad & Carpenter,9/16/2020,Inactive
+3214,Broad & Cecil B Moore,9/22/2020,Inactive
+3226,2nd & Norris,12/24/2020,Active
+3233,Race & Franklin,5/14/2021,Active
+3234,20th & Cuthbert,5/11/2021,Inactive
+3235,16th & Callowhill,5/19/2021,Active
+3236,24th & Pennsylvania,6/1/2021,Active
+3237,Broad & Oregon,5/21/2021,Active
+3238,6th & S Washington Square,6/1/2021,Active
+3240,44th & Haverford,6/25/2021,Active
+3241,52nd & Larchwood - Malcolm X Park,6/15/2021,Active
+3243,8th & Diamond,7/8/2021,Active
+3244,Broad & Carpenter,7/15/2021,Active
+3245,Broad & Cecil B Moore,9/21/2021,Active
+3246,50th & Baltimore,7/27/2021,Active
+3247,47th & Aspen - Lucien Blackwell,7/21/2021,Active
+3248,24th & Christian,8/2/2021,Active
+3249,34th & Arch,8/16/2021,Active
+3250,4th & Wood,9/28/2021,Active
+3251,29th & Tasker,8/17/2021,Active
+3252,30th & Oakford,8/23/2021,Active
+3253,27th & Morris - Vare Recreation Center,8/31/2021,Active
+3254,16th & Montgomery,9/22/2021,Active
+3255,Broad & Chestnut,9/2/2021,Active
+3256,23rd & Chestnut,9/21/2021,Active
+3257,2nd & Snyder,10/19/2021,Active
+3258,52nd & Chestnut,10/23/2021,Active
+3259,Saunders & Pearl,11/5/2021,Inactive
+3261,2nd & Brown,12/2/2021,Active
+3263,43rd & Powelton,2/23/2022,Active
+3264,8th & Spruce,5/19/2022,Active
+3265,Powelton & Lancaster,3/31/2022,Active
+3266,Water & Mifflin,2/15/2022,Active
+3267,19th & Oregon,2/17/2022,Active
+3271,53rd & Baltimore,3/3/2022,Active
+3272,50th & Haverford,3/11/2022,Active
+3273,Ridge & Ferry,5/8/2022,Inactive
+3275,York & Aramingo,4/22/2022,Active
+3276,12th & Fairmount,4/22/2022,Active
+3277,20th & Berks,6/25/2022,Active
+3278,22nd & Sedgley,6/29/2022,Active
+3279,13th & Mifflin,7/6/2022,Active
+3280,50th & Woodland,7/13/2022,Active
+3281,Lindbergh & Wheeler,7/28/2022,Active
+3282,10th & Nevada,7/21/2022,Active
+3284,Midvale & Cresson,10/25/2022,Active
+3285,5th & Willow,11/29/2022,Active
+3286,6th & Brown,10/6/2022,Active
+3287,49th & Chester,9/7/2022,Active
+3291,Ridge & Heritage,11/3/2022,Active
+3294,18th & Chestnut,11/9/2022,Active
+3295,12th & Chestnut,11/3/2022,Active
+3296,16th & Chestnut,10/11/2022,Active
+3298,42nd & Woodland,11/16/2022,Active
+3299,9th & Lombard,12/8/2022,Active
+3300,Broad & Cherry,12/7/2022,Active
+3283,24th & Seybert,1/18/2023,Inactive
+3292,5th & Wolf,1/12/2023,Active
+3297,18th & Vine,1/11/2023,Active
+3301,18th & Walnut,1/4/2023,Active
+3303,41st & Chestnut,2/8/2023,Active
+3304,7th & South,1/24/2023,Active
+3305,22nd & Lehigh,1/30/2023,Active
+3306,28th & Lehigh,1/31/2023,Active
+3307,27th & Clearfield,2/3/2023,Active
+3308,12th & Carpenter,3/2/2023,Active
+3309,"52nd Street Station, MFL",2/7/2023,Inactive
+3310,Oxford & Glenwood,2/14/2023,Active
+3311,4th & Oregon,2/17/2023,Active
+3313,10th & Oregon,2/21/2023,Active
+3314,Front & Queen,3/15/2023,Active
+3315,48th & Woodland,2/24/2023,Active
+3316,16th & Wolf,2/28/2023,Active
+3317,30th & Reed,3/5/2023,Active
+3318,City Hall South,3/9/2023,Active
+3319,Penn Treaty Park,4/4/2023,Active
+3320,Broad & Master,3/16/2023,Active
+3321,20th & Cuthbert,3/22/2023,Active
+3322,7th & Passyunk,5/18/2023,Active
+3323,Manayunk Bridge,4/11/2023,Active
+3324,Kelly Drive - Strawberry Mansion Bridge,3/29/2023,Active
+3326,M.L.K. Drive - Strawberry Mansion Bridge,4/5/2023,Active
+3327,York & Gaul,6/13/2023,Active
+3328,Kelly Drive Grandstand,3/30/2023,Active
+3329,Cresson & Levering,4/27/2023,Active
+3330,Municipal Services Building,6/21/2023,Inactive
+3331,Girard & Palmer,6/21/2023,Active
+3332,32nd & Allegheny,6/28/2023,Active
+3334,7th & Dickinson,5/16/2023,Active
+3335,Main & Shurs,6/1/2023,Active
+3336,36th & Filbert,5/24/2023,Active
+3337,6th & Master,5/10/2023,Active
+3338,54th & Cedar,5/30/2023,Active
+3339,Pencoyd Bridge,6/6/2023,Inactive
+3340,27th & Pennsylvania,6/15/2023,Active
+3268,10th & Oxford,9/21/2023,Active
+3325,Cedar & Norris,7/31/2023,Active
+3333,18th & JFK Curbside,7/18/2023,Active
+3341,York & Trenton,7/11/2023,Active
+3342,22nd & Spring Garden,7/13/2023,Active
+3343,21st & Washington,7/20/2023,Active
+3344,56th & Chestnut,7/27/2023,Active
+3345,5th & Spring Garden,8/3/2023,Active
+3346,6th & Chestnut,8/10/2023,Active
+3347,9th & Race,8/17/2023,Active
+3348,27th & Master,8/22/2023,Active
+3349,25th & Wharton,8/31/2023,Active
+3350,Broad & Lehigh,9/5/2023,Active
+3351,12th & Cambria,9/21/2023,Active
+3353,"Broad & Ontario, Temple Hospital",9/28/2023,Active
+3352,Broad & Allegheny,12/1/2023,Active
+3354,58th & Spruce,10/11/2023,Active
+3355,Broad & Snyder,10/12/2023,Active
+3356,12th & Normandy,10/17/2023,Active
+3357,10th & Packer,10/19/2023,Active
+3358,"Thompson & Palmer, Adaire School",10/24/2023,Inactive
+3359,17th & Locust,11/1/2023,Active
+3360,Broad & Reed,11/7/2023,Active
+3361,"18th & Fernon, Aquinas Center",12/5/2023,Active
+3364,12th & Filbert,11/20/2023,Inactive
+3365,"32nd & Baring, Drexel Park",11/28/2023,Active
+3366,57th & Westminster,12/8/2023,Active
+3368,23rd & Master,12/20/2023,Active
+3362,13th & Locust,1/8/2024,Active
+3363,13th & Spruce,2/12/2024,Active
+3369,Ridge & Ferry,1/4/2024,Active
+3370,Pencoyd Bridge,1/5/2024,Active
+3371,9th & Arch,1/11/2024,Active
+3372,24th & Jackson,1/25/2024,Active
+3373,11th & Wood,2/1/2024,Active
+3375,"Spring Garden Station, MFL",1/30/2024,Active
+3376,Thompson & Franklin,2/6/2024,Active
+3377,21st & Passyunk,2/20/2024,Active
+3378,4th & Arch,2/22/2024,Active
+3380,American & Master,2/27/2024,Inactive
+3381,48th & Baltimore,3/27/2024,Active
+3382,Walnut & Rittenhouse,4/17/2024,Active
+3383,"3rd & Wildey, Liberty Lands Park",4/23/2024,Active
+3374,26th & Poplar,4/25/2024,Active
