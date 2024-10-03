@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "header header"
+                        "map chart";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  grid-area: header;
+}
+
+#map {
+  grid-area: map;
+  background-color: white;
+}
+
+#chart {
+  grid-area: chart;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
