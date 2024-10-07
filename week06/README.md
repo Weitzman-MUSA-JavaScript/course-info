@@ -3,13 +3,13 @@
 - Working with Data in JavaScript (part 2, recorded in class, ~90 min), https://share.descript.com/view/LOY1SbKgQxp
 - Fetch, Timeout, and Other Asynchronous Operations, _Coming Soon!_
 
-- Constructing a cohesive interface
+### Constructing a cohesive interface
   - Responding to User Events in JavaScript (~35 min), https://share.descript.com/view/X22VUMWF8Nl
   - Wireframing a Dashboard (part 2 - Mocking the Layout), _Coming Soon!_
   - Manipulating the DOM, _Coming Soon!_
   - Cross-component Communication with Custom Events, _Coming Soon!_
 
-- Diving into visualization libraries
+### Diving into visualization libraries
   - SVG vs. Canvas in Maps, _Coming Soon!_
   - Tools in the D3 Toolbox, _Coming Soon!_
 
