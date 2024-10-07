@@ -9,7 +9,7 @@ In this exercise you'll build on the choropleth map that you created in the prev
 
 - Working with Data in JavaScript (part 1), https://share.descript.com/view/OQUN0qwjLIE
 - Dashboards Discussion, https://share.descript.com/view/cEFZytGb1mr
-- Wirframing a Dashboard, https://share.descript.com/view/xhgonTkkpix
+- Wirframing a Dashboard (part 1 - Sketching the Idea), https://share.descript.com/view/xhgonTkkpix
 
 ## References
 
