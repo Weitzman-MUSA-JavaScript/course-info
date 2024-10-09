@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>DOM Manipulation Examples</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>DOM Manipulation Examples</h1>
+    </header>
+
+    <main>
+      <fieldset id="neighborhoods">
+        <legend>Neighborhoods</legend>
+
+        <input name="search-neighborhoods" aria-label="Search for a neighborhood" placeholder="Search for a neighborhood...">
+
+        <ul id="neighborhoods-list">
+          <li>
+            <label>
+              <input name="neighborhood" type="checkbox" value="EAST_PASSYUNK">
+              East Passyunk
+            </label>
+          </li>
+          <li>
+            <label>
+              <input name="neighborhood" type="checkbox" value="CHESTNUT_HILL">
+              Chestnut Hill
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

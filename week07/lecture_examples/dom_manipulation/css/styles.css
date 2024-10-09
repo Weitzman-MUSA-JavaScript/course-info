@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li:has(input:checked) {
+  background-color: yellow;
+}
+
+[name="search-neighborhoods"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
