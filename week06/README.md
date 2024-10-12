@@ -6,8 +6,6 @@
 ### Constructing a cohesive interface
   - Responding to User Events in JavaScript (~35 min), https://share.descript.com/view/X22VUMWF8Nl
   - Wireframing a Dashboard (part 2 - Mocking the Layout), https://share.descript.com/view/TBYL3aRdl8w
-  - Manipulating the DOM, _Coming Soon!_
-  - Cross-component Communication with Custom Events, _Coming Soon!_
 
 ### Diving into visualization libraries
   - SVG vs. Canvas in Maps, _Coming Soon!_

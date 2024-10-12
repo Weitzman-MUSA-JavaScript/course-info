@@ -17,3 +17,8 @@ li:has(input:checked) {
   padding: 0.5em;
   margin-bottom: 1em;
 }
+
+.map {
+  height: 40vh;
+  background-color: white;
+}
