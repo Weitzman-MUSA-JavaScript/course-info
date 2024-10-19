@@ -1,0 +1,40 @@
+.scene {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.frames-per-second {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-weight: bold;
+  color: red;
+}
+
+.num-dots {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: bold;
+  color: red;
+}
+
+.control {
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+circle {
+  fill-opacity: 0;
+  stroke: black;
+  stroke-width: 1px;
+}
