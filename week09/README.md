@@ -7,4 +7,7 @@
 
 # Resources
 
+- The Noun Project - https://thenounproject.com/
+  - "Bike" icon by Yosua Bungaran - https://thenounproject.com/icon/bike-7149629/
 - _Cookies vs Local Storage in JavaScript_ - https://dev.to/diwakarkashyap/cookies-vs-local-storage-in-javascript-3m0h
+- My bikeshare dashboard progress - https://github.com/mjumbewu/dashboard-project/tree/2024-bikeshare
