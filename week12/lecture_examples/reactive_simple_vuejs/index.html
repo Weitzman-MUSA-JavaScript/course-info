@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Simple Reactive Example with Vue.js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+
+  <body>
+    <h1>Simple Reactive Example with Vue.js</h1>
+    <main>
+      <input id="a1" type="number" placeholder="A1" v-model="a1">
+      <input id="a2" type="number" placeholder="A2" v-model="a2">
+      <input id="a3" type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A1 and A2 -->
+    </main>
+
+    <script>
+      const { createApp, ref, computed } = Vue;
+
+      const app = createApp({
+        setup() {
+          const a1 = ref(1);
+          const a2 = ref(2);
+
+          return { a1, a2 };
+        }
+      });
+
+      app.mount('main');
+    </script>
+</html>

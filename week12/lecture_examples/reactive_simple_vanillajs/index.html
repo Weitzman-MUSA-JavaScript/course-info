@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Simple Reactive Example with Vanilla JS</title>
+  </head>
+
+  <body>
+    <h1>Simple Reactive Example with Vanilla JS</h1>
+    <input id="a1" type="number" placeholder="A1">
+    <input id="a2" type="number" placeholder="A2">
+    <input id="a3" type="number" placeholder="A3" readonly> <!-- Should contain the sum of A1 and A2 -->
+
+    <script type="module">
+      a1.value = 1;
+      a2.value = 2;
+    </script>
+</html>
