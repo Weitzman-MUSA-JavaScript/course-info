@@ -8,10 +8,15 @@
 
   <body>
     <h1>Simple Reactive Example with Vue.js</h1>
-    <main>
-      <input id="a1" type="number" placeholder="A1" v-model="a1">
-      <input id="a2" type="number" placeholder="A2" v-model="a2">
-      <input id="a3" type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A1 and A2 -->
+    <main id="the-vue-container">
+      <input type="number" placeholder="A0" v-model="a0"><br>
+      <input type="number" placeholder="A1" v-model="a1"><br>
+      <input type="number" placeholder="A2" v-model="a2"><br>
+      <input type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A1 and A2 -->
+
+      <p>The new value of <code>a3</code> is {{ a3 }}.
+        It was calculated by adding {{a0}}, {{ a1 }},
+        and {{ a2 }}</p>
     </main>
 
     <script>
@@ -19,13 +24,17 @@
 
       const app = createApp({
         setup() {
+          const a0 = ref(10);
           const a1 = ref(1);
           const a2 = ref(2);
+          const a3 = computed(() => {
+            return a0.value + a1.value + a2.value;
+          });
 
-          return { a1, a2 };
+          return { a0, a1, a2, a3 };
         }
       });
 
-      app.mount('main');
+      app.mount('#the-vue-container');
     </script>
 </html>

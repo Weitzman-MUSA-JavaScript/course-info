@@ -7,12 +7,33 @@
 
   <body>
     <h1>Simple Reactive Example with Vanilla JS</h1>
-    <input id="a1" type="number" placeholder="A1">
-    <input id="a2" type="number" placeholder="A2">
+    <input id="a0" type="number" placeholder="A0"><br>
+    <input id="a1" type="number" placeholder="A1"><br>
+    <input id="a2" type="number" placeholder="A2"><br>
     <input id="a3" type="number" placeholder="A3" readonly> <!-- Should contain the sum of A1 and A2 -->
 
+    <p id="text"></p>
+
     <script type="module">
+      a0.value = 10;
       a1.value = 1;
       a2.value = 2;
+
+      function updateA3() {
+        a3.value = Number(a0.value) + Number(a1.value) + Number(a2.value);
+        updatePText();
+      }
+
+      function updatePText() {
+        text.innerHTML = `The new value of <code>a3</code> is ${a3.value}.
+        It was calculated by adding ${a0.value}, ${a1.value},
+        and ${a2.value}`;
+      }
+
+      a0.addEventListener('input', updateA3);
+      a1.addEventListener('input', updateA3);
+      a2.addEventListener('input', updateA3);
+
+      updateA3();
     </script>
 </html>
