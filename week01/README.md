@@ -27,6 +27,7 @@ From [JavaScript.info](https://javascript.info/):
 
 ## Practice
 
+- Join the Slack (with your UPenn email address): https://join.slack.com/t/musa-tools-track/shared_invite/zt-3c714ynv6-K_oQ7jU82hC2LcVCi0NvtA
 - Set up your story map project
   - Fork the repository
   - Clone the repository
