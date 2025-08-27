@@ -24,14 +24,22 @@ From [JavaScript.info](https://javascript.info/):
   - [18F Prototyping Method Card](https://guides.18f.gov/methods/make/prototyping/)
 - Intro to CSS
   - An "inch" in CSS is usually equal to 96 pixels ([Smashing Magazine, _There Is No Such Thing As A CSS Absolute Unit_](https://www.smashingmagazine.com/2021/07/css-absolute-units/))
+- Using GitHub with your `git` client
+  - If you're using VS Code or GitHub Desktop, you may be able to simply log in to your GitHub Account. However, if you're interested in using the command line `git` command, you may need to set up SSH keys. It's a process, but it's not very hard, and is well-documented at https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+- Our default linter configurations
+  - Review: A linter is a program that you can use to check whether your code conforms to a certain set of style choices. You can often choose which style choices you care about.
+  - In the Story Map project (and most code in this class) we will use a slightly modified version of [Google's eslint configuration](https://github.com/google/eslint-config-google) (which defines the JS style choices they adhere to within Google), and a slightly modified version of [the "standard" stylelint configuration](https://stylelint.io/user-guide/rules/).
 
 ## Practice
 
 - Join the Slack (with your UPenn email address): https://join.slack.com/t/musa-tools-track/shared_invite/zt-3c714ynv6-K_oQ7jU82hC2LcVCi0NvtA
+- Install [Node.js (LTS version)](https://nodejs.org/en/download) if you haven't already
+  - Verify installation by running `node -v` and `npm -v` in a terminal
+- Install VS Code if you haven't already
+  - Install the ESLint and Stylelint extensions
 - Set up your story map project
   - Fork the repository
   - Clone the repository
-  - Ensure VS Code (or whatever code editor) is configured with linters as desired
 - Choose a data domain for your projects. Slack it to me. Start to find data sources. Slack those to me as well.
 - Install the Axe developer tools
 - Stub out an about page for your story map, explaining the data domain. Should have:
