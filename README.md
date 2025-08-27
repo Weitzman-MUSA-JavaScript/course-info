@@ -3,20 +3,14 @@
 # Syllabus
 
 * **Course**: CPLN-6920/MUSA-6110, University of Pennsylvania
-* **Location**: Williams Hall 214 (for now)
+* **Location**: McNeil Building 286-7
 * **Schedule**: 1:45-4:45PM, Wednesdays
 * **Instructor**:
   * Mjumbe Poe, mjumbe@design.upenn.edu
-* **TA**:
-  * Junyi Yang, junyiy@design.upenn.edu
 * **Office Hours**:
-  * Mjumbe:
-    - Wednesday 10AM-1PM in the RDDSx space, Van Pelt Library
-    - By appointment
-  * Junyi:
-    - Tuesday 1PM-3PM on Zoom (Use [this link](https://calendly.com/yjymonica2012/junyi-musa-javascript-office-hour) to schedule)
-    - The above schedule may be moved to another day if there is a schedule conflict. (Check the link above for the most up-to-date schedule)
-    - By appointment
+  - Coworking in person ([check schedule here](https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&mode=WEEK&src=ZDRjNTI3NDhhNWIzMTFhZGM2NTdhZjVmZjEyYTIxNmY1MjkxNWFkMmFiMjYxYzM5YWNlZjlkMTRiMWI5MWIzNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300))
+    _Usually in Van Pelt RDDSx Wednesdays, 10:00-1:00, but there are exceptions; check the calendar_
+  - Virtually, by appointment ([book here](https://calendly.com/mjumbe-upenn/community))
 * **Need help?**
   * [Slack](https://musa-tools-track.slack.com/)
   * Stack Overflow is your friend!
@@ -111,38 +105,37 @@ There will be additional resources on topics covered in the class in the _[resou
 
 | Week | Date | Topic | Learning Objective(s) (Students should be able to...) |
 | :--: | :--: | :-- | :-- |
-| **1** | **28&nbsp;Aug** | Getting started | <li> Know my name and what I do<br><li> Describe what JavaScript is good for in planning and data |
-| **2** | **04&nbsp;Sep** | Designing for the User | <li> Describe the right questionsto ask when starting a product |
+| **1** | **27&nbsp;Aug** | Getting started | <li> Know my name and what I do<br><li> Describe what JavaScript is good for in planning and data |
+| **2** | **03&nbsp;Sep** | Designing for the User | <li> Describe the right questions to ask when starting a product |
 |   |  | Intro to Web Tech | <li> Put together an HTML page structure<br><li> Use simple semantic tags (p, ul/ol/li, h1-6, section, header, footer, main, ...)<br><li> Use semantic tags with attributes (a, img, ...) |
 |   |  | Intro to Web Accessibility | <li> Use references (e.g. a11yproject, accessibility-developer-guide)<br><li> Use an accessibility checker (e.g. Axe)<br><li> Understand that an accessibility checker won't catch everything |
 |   |  | Intro CSS (selectors, units, and colors) | <li> Use generic HTML containers (div/span)<br><li> Use id attributes to uniquely identify elements<br><li> Use class attributes to group elements together<br><li> Filter/select elements based on their tag, class, id, or attributes<br><li> Identify when to use which units<br><li> Recognize hex-coded colors<br><li> Find HTML color labels |
-| **3** | **11&nbsp;Sep** | Using JavaScript on the Web | <li> Create a script file to link to an HTML page<br><li> Find resources on JS syntax and language<br><li> Explain what a library is (a framework is a big library, a module is a small library)<br><li> Explain what a CDN is<br><li> Use script and link tags to include a JS library<br><li> Use import statements to include a JS library |
+| **3** | **10&nbsp;Sep** | Using JavaScript on the Web | <li> Create a script file to link to an HTML page<br><li> Find resources on JS syntax and language<br><li> Explain what a library is (a framework is a big library, a module is a small library)<br><li> Explain what a CDN is<br><li> Use script and link tags to include a JS library<br><li> Use import statements to include a JS library |
 |   |  | Intro to Web Maps | <li> Import Leaflet for use (via a script tag or an import statement)<br><li> Use the ID of an element to add a Leaflet map to a page<br><li> Use the querySelector function to add a Leaflet map to a page |
 |   |  | The GeoJSON Data Format | <li> Explain the difference between a JSON string vs object<br><li> Explain the relationship between JSON and GeoJSON<br><li> Identify the components of a GeoJSON object<br><li> Explain the relationship between GeoJSON geometries, geometry collections, features, and feature collections<br><li> Add GeoJSON to a map and style it parammetrically |
 |   |  | JS Style & Linting | <li> Use tools in VS Code to auto-format code and identify issues |
-| **4** | **18&nbsp;Sep** | The Box Model | <li> Explain an element's padding, margin, border, and width/height<br><li> Get rid of the default space around an HTML document's body |
+| **4** | **17&nbsp;Sep** | The Box Model | <li> Explain an element's padding, margin, border, and width/height<br><li> Get rid of the default space around an HTML document's body |
 |   |  | Flexbox and Grid Layouts | <li> Create linear layouts wit flexbox<br><li> Create tabular layouts with grid |
 |   |  | Debugging layouts | <li> Use their browser's developer tools to inspect an element's layout |
 |   |  | Debugging specificity | <li> Use their browser's developer tools to see why a style is applied<br><li> Explain which CSS rules are more specific than others |
-| **5** | **25&nbsp;Sep** | Working with Data in JS | <li> Explain what a predicate function is and what it's for<br><li> Use the filter function to filter an array<br><li> Use the map function to generate a new array<br><li> Use the reduce function to combine array elements<br><li> Use for...of loops equivalent to map, filter, and reduce |
+| **5** | **24&nbsp;Sep** | Working with Data in JS | <li> Explain what a predicate function is and what it's for<br><li> Use the filter function to filter an array<br><li> Use the map function to generate a new array<br><li> Use the reduce function to combine array elements<br><li> Use for...of loops equivalent to map, filter, and reduce |
 |   |  | Writing functions for data manipulation | <li> Generate GeoJSON structures from other data formats<br><li> Generate chart configurations from other data formats |
 |   |  | Charting libraries | <li> Name some of the available charting libraries<br><li> Understand what some of the pieces of D3 are for |
 |   |  | Asynchronous Behavior #1 (events) | <li> Use on... HTML attributes to trigger JS<br><li> Use addEventListener to trigger JS (on map and layer objects)<br><li> Explain the impact of variable scoping (like functions within modules) |
 |   |  | Organizing JavaScript Using Modules | <li> Use import and export statements to organize code into modules<br><li>Identify distinct "components" within an application's design |
-| **6** | **02&nbsp;Oct** | DOM Manipulation | <li> Query for elements in the DOM<br><li> Insert new DOM elements into the document<br><li> Remove elements from the document<br><li> Work with elements that are disconnected from the document |
+| **6** | **01&nbsp;Oct** | DOM Manipulation | <li> Query for elements in the DOM<br><li> Insert new DOM elements into the document<br><li> Remove elements from the document<br><li> Work with elements that are disconnected from the document |
 |   |  | Asynchronous behavior #2 (requests) | <li> Format a request URL with query string parameters<br><li> Use GET and POST requests using an options object<br><li> Explain the Promise vs async/await syntax of fetch<br><li> Work with fetched data (e.g. conver to GeoJSON or chart config) |
-| **7** | **09&nbsp;Oct** | Map Tiles |  |
-| **8** | **16&nbsp;Oct** | Browser APIs (Geolocation) |  |
+| **7** | **08&nbsp;Oct** | Map Tiles |  |
+| **8** | **15&nbsp;Oct** | Browser APIs (Geolocation) |  |
 |   |  | 3rd-party APIs (Routing, Geocoding) |  |
-| **9** | **23&nbsp;Oct** | Browser-based data persistence (in-memory, session, and local storage) |  |
+| **9** | **22&nbsp;Oct** | Browser-based data persistence (in-memory, session, and local storage) |  |
 |   |  | Firestore for data persistance |  |
-| **10** | **30&nbsp;Oct** | Reactive JavaScript patterns |  |
-| **11** | **06&nbsp;Nov** |  |  |
-| **12** | **13&nbsp;Nov** |  |  |
-| **13** | **20&nbsp;Nov** |  |  |
-|        | ~~27&nbsp;Nov~~ | (No class) |  |
-| **14** | **04&nbsp;Dec** | Project presentations |  |
-| **15** | **11&nbsp;Dec** | Overflow presentations<br>(if necessary) |  |
+| **10** | **29&nbsp;Oct** | Reactive JavaScript patterns |  |
+| **11** | **05&nbsp;Nov** |  |  |
+| **12** | **12&nbsp;Nov** |  |  |
+| **13** | **19&nbsp;Nov** |  |  |
+|        | ~~26&nbsp;Nov~~ | (No class) |  |
+| **14** | **03&nbsp;Dec** | Project presentations |  |
 <!--
 
 #### Week 1 - Getting started
@@ -212,4 +205,4 @@ In compliance with Penn's [Code of Academic Integrity](http://www.upenn.edu/acad
 
 I don't mind generative AI tools to help with coding -- I use them myself on a limited basis. If you use Chat GPT or any other AI tool, note that you are subject to the same guidelines around citation as above.
 
-Also, understand that many of these tools often make mistakes that can be difficult to identify if you don't know what you're doing. If you and can verify that the generated code is correct, cool. But if you come to me or the TA to help debugging something generated with AI, it is always best to disclose the source of the code (for that matter, I'll be able to tell), as it would be with any code.
+Also, understand that many of these tools often make mistakes that can be difficult to identify if you don't know what you're doing. If you can verify that the generated code is correct, cool. But if you come to me or any other instructor to help debug something generated with AI, it is always best to disclose the source of the code (for that matter, I'll be able to tell), as it would be with any code.
