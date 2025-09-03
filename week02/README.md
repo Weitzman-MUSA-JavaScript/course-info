@@ -1,7 +1,7 @@
 ## Practice
 
 * Critique Accessibility
-  * Choose a task on a public-sector site, and evaluate its accessibility for various users. See in-class slides for more information.
+  * Choose a task on a public-sector site, and evaluate its accessibility for various users. See slides for more information: https://docs.google.com/presentation/d/1cuqEW3qh9q1Z_dyZPrgf0Sd2cGMLAfFFoCXoDgzCsQg/edit
 * JavaScript Exercises
   * Fork the repository at https://github.com/Weitzman-MUSA-JavaScript/intro-js-exercises
   * Complete the exercises in the [exercises](https://github.com/Weitzman-MUSA-JavaScript/intro-js-exercises/tree/main/exercises) directory. Follow the instructions in the comments to implement the functions and check your work.
