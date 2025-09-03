@@ -1,3 +1,12 @@
+## Practice
+
+* Critique Accessibility
+  * Choose a task on a public-sector site, and evaluate its accessibility for various users. See in-class slides for more information.
+* JavaScript Exercises
+  * Fork the repository at https://github.com/Weitzman-MUSA-JavaScript/intro-js-exercises
+  * Complete the exercises in the [exercises](https://github.com/Weitzman-MUSA-JavaScript/intro-js-exercises/tree/main/exercises) directory. Follow the instructions in the comments to implement the functions and check your work.
+
+
 ## Videos
 
 * Intro to Web Maps -- ([video](https://share.descript.com/view/c5q4jtZliwP), ~52min)
