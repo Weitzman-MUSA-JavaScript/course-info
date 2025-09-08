@@ -61,10 +61,16 @@ This syllabus is a living document. As the course progresses, greater detail wil
 There will be two structured projects that everyone will take part in, and one that will be more self-directed. The first two projects will be done individually, and the final project can be done in groups or individually. I encourage you to use the same domain of data for all three projects, so that you can build on your work from one project to the next.
 
 1.  **A Story Map** -- Story maps utilize maps, text, and multimedia to present interactive narratives to engage users and provide accessible geographic context. You will create a story map based on a topic of your choosing. _The focus of this project will be on explaining some topic through a geospatial lens._
+
+    _**Weeks 1-4** will be spent working on this project._
 2.  **A Dashboard** -- Dashboards are a type of data visualization often use common visualization tools such as graphs, charts, and tables to summarize and present related data sets in a way that makes the information easier to understand. You will choose some publicly available data to build a dashboard around, while honing in on the actual use case that drives the work. _The focus of this project will be on helping users make decisions._
+
+    _**Weeks 5-8** will be spent working on this project._
 3.  **An Interactive Final Project** -- Your final project for the class will be decided through a project proposal negotiated with me. The projects should build upon many of the concepts learned throughout the class, and incorporate some significant amount of interactivity. _The focus of this project will be on engagement -- i.e. inviting members of the public to create or add to a dataset in some way._
 
     Final projects will be done in groups or independently — criteria for success will be hammered out in the final project proposal and group projects (if we have any) will be expected to engage with a wider scope and greater difficulty than individual projects. Group projects will also leverage the power of GitHub to make collaboration simpler and more transparent for grading purposes (this will make more sense once you're familiar with GitHub).
+
+    _**Weeks 9-14** will be spent working on this project._
 
 ## Work Evaluation & Feedback
 
