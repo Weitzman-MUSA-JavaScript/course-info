@@ -12,8 +12,12 @@ In this exercise you'll create a simple choropleth map to display county-level e
 
     The Javascript [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) functions may be useful to you. For example, to get the absolute value of a number, you can use `Math.abs()`. To get the maximum of two numbers, you can use `Math.max()`. To get the minimum of two numbers, you can use `Math.min()`.
 
-As an example, my map looks like this:
+    As an example, my map looks like this:
 ![Example Results Map](practice_files/example_results_map.png)
+
+7.  Add a legend to your map that explains the color scheme. You can use the Leaflet [Control](https://leafletjs.com/reference.html#control) class to create a custom control for your legend. There is an example of this in the [Leaflet Tutorials](https://leafletjs.com/examples/choropleth/#custom-legend-control).
+
+This exercise used Leaflet to create a choropleth map. There is a tutorial from Points Unknown that walks through the steps of creating a choropleth map using Mapbox GL JS. You can find that tutorial [here](https://pointsunknown.nyc/web%20mapping/mapbox/python/pandas/geopandas/2021/07/14/08A_WebmappingElectionData.html).
 
 ## Videos
 
