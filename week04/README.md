@@ -6,3 +6,8 @@ In the https://github.com/Weitzman-MUSA-JavaScript/pa-county-election-results re
 
 1. on full screen monitors, have the map take up about 2/3 of the width of the screen and the details panel take up about 1/3 of the width of the screen. The details panel should be to the right of the map. (for an extra challenge, make the info panel "hover" over the map with space on the top, right, and bottom)
 2. on smaller screens (e.g. tablets), have the map take up the full width, and half the height of the screen, with the details panel below it taking up the full width and half the height of the screen.
+
+## References
+
+- [Minnesota Accessibility Guide for Interactive Web Maps](https://mn.gov/mnit/assets/Accessibility%20Guide%20for%20Interactive%20Web%20Maps_tcm38-403564.pdf)
+- [Leaflet Accessible Maps Tips](https://leafletjs.com/examples/accessibility/)
