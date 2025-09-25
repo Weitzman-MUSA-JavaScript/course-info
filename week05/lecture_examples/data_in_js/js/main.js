@@ -1,7 +1,7 @@
 import * as turf from 'https://cdn.jsdelivr.net/npm/@turf/turf@7.1.0/+esm';
 
 const mapEl = document.querySelector('#map');
-const map = L.map(mapEl);
+const map = L.map(mapEl, {zoomSnap: 0});
 
 // Add neighborhoods to map...
 const hoodsResponse = await fetch('data/philadelphia-neighborhoods.geojson');
