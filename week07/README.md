@@ -1,13 +1,12 @@
 ## Videos
 
-- Fetch, Timeout, and Other Asynchronous Operations, _Coming Soon!_
+- Fetch, Timeout, and Other Asynchronous Operations (~21 min), https://share.descript.com/view/1VGjs2ru1ns
 
 ### Constructing a cohesive interface
-  - Manipulating the DOM, https://share.descript.com/view/1QidFjqvf1V
   - Cross-component Communication with Custom Events, https://share.descript.com/view/Doe9dBnc5K0
 
 ### Diving into visualization libraries
-  - SVG vs. Canvas in Maps, _Coming Soon!_
+  - SVG vs. Canvas in Maps (~38 min), https://share.descript.com/view/WmAXqcbini3
   - Tools in the D3 Toolbox, _Coming Soon!_
 
 <!--

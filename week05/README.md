@@ -8,8 +8,10 @@ In this exercise you'll build on the choropleth map that you created in the prev
 ## Videos
 
 - Working with Data in JavaScript (part 1), https://share.descript.com/view/pfrvkwh98kh
-- Wirframing a Dashboard (part 1 - Sketching the Idea), https://share.descript.com/view/xhgonTkkpix
 - Dashboards Discussion (optional, as we will discuss on Wednesday; recorded from 2024 in-class discussion), https://share.descript.com/view/cEFZytGb1mr
+
+### Wireframing a Dashboard
+- Wireframing a Dashboard (part 1 - Sketching the Idea), https://share.descript.com/view/xhgonTkkpix
 
 ## References
 
