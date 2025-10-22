@@ -1,0 +1,22 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "autocomplete geolocate"
+    "map          map";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.auto-complete {
+  grid-area: autocomplete;
+}
+
+.geolocate {
+  grid-area: geolocate;
+}
+
+.map {
+  grid-area: map;
+  height: 100%;
+}
