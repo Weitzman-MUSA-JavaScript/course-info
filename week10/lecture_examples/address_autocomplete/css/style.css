@@ -1,0 +1,38 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "autocomplete geolocate"
+    "map          map";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.auto-complete {
+  grid-area: autocomplete;
+}
+
+.geolocate {
+  grid-area: geolocate;
+}
+
+.map {
+  grid-area: map;
+  height: 100%;
+}
+
+#suggestions {
+  list-style: none;
+  padding: 0;
+  border: 1px solid black;
+}
+
+#suggestions button {
+  border: none;
+  background: none;
+  border-bottom: 1px solid gray;
+}
+
+button:hover {
+  cursor: pointer;
+}
