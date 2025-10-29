@@ -20,3 +20,19 @@ main {
   grid-area: map;
   height: 100%;
 }
+
+#suggestions {
+  list-style: none;
+  padding: 0;
+  border: 1px solid black;
+}
+
+#suggestions button {
+  border: none;
+  background: none;
+  border-bottom: 1px solid gray;
+}
+
+button:hover {
+  cursor: pointer;
+}
