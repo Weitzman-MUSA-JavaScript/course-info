@@ -3,6 +3,11 @@ import * as turf from '@turf/turf';
 const stationsUrl = 'https://gbfs.lyft.com/gbfs/1.1/bos/en/station_information.json';
 const serviceAreaUrl = `data/bluebikes_service_area.geojson`;
 
+/**
+ * Convert GBFS station information to GeoJSON FeatureCollection
+ * @param {Object} info - GBFS station information response
+ * @returns {Object} GeoJSON FeatureCollection of station features
+ */
 function gbfsToFeatureCollection(info) {
   return {
     type: 'FeatureCollection',
@@ -18,6 +23,9 @@ function gbfsToFeatureCollection(info) {
   };
 }
 
+/**
+ * Bikeshare data service for managing station and service area information
+ */
 const Bikeshare = {
   stations: null,
   serviceArea: null,
@@ -25,20 +33,31 @@ const Bikeshare = {
   _stationsPromise: null,
   _serviceAreaPromise: null,
 
+  /**
+   * Fetch bikeshare station data from GBFS API with event dispatching
+   * @param {EventTarget} events - Event bus for dispatching load events
+   * @param {number} retries - Number of retry attempts (default: 3)
+   */
   fetchStations: async (events, retries = 3) => {
     if (Bikeshare.stations) { return }
 
-    Bikeshare._stationsPromise ||= Bikeshare._fetchStations(events, retries);
+    events?.dispatchEvent(new CustomEvent('load-stations'));
+    Bikeshare._stationsPromise ||= Bikeshare._fetchStationsHelper(retries);
     try {
       const stations = await Bikeshare._stationsPromise;
       Bikeshare.stations = stations;
-      events.dispatchEvent(new Event('load-stations:success', { detail: { stations } }));
+      events?.dispatchEvent(new CustomEvent('load-stations:success', { detail: { stations } }));
     } catch (error) {
-      events.dispatchEvent(new Event('load-stations:error', { detail: { error } }));
+      events?.dispatchEvent(new CustomEvent('load-stations:error', { detail: { error } }));
     }
   },
 
-  _fetchStations: async (events, retries = 3) => {
+  /**
+   * Internal method to fetch station data with retry logic
+   * @param {number} retries - Number of retry attempts
+   * @returns {Promise<Object>} GeoJSON FeatureCollection of stations
+   */
+  _fetchStationsHelper: async (retries) => {
     try {
       const response = await fetch(stationsUrl);
       if (!response.ok) {
@@ -51,7 +70,7 @@ const Bikeshare = {
       console.error('Error fetching Bikeshare stations:', error);
       if (retries > 0) {
         console.log(`Retrying... (${retries} attempts left)`);
-        return await Bikeshare._fetchStations(events, retries - 1);
+        return await Bikeshare._fetchStationsHelper(retries - 1);
       } else {
         console.error('Failed to fetch Bikeshare stations after multiple attempts.');
         throw error;
@@ -59,20 +78,31 @@ const Bikeshare = {
     }
   },
 
+  /**
+   * Fetch bikeshare service area data with event dispatching
+   * @param {EventTarget} events - Event bus for dispatching load events
+   * @param {number} retries - Number of retry attempts (default: 3)
+   */
   fetchServiceArea: async (events, retries = 3) => {
     if (Bikeshare.serviceArea) { return }
 
-    Bikeshare._serviceAreaPromise ||= Bikeshare._fetchServiceArea(events, retries);
+    events?.dispatchEvent(new CustomEvent('load-service-area'));
+    Bikeshare._serviceAreaPromise ||= Bikeshare._fetchServiceArea(retries);
     try {
       const serviceArea = await Bikeshare._serviceAreaPromise;
       Bikeshare.serviceArea = serviceArea;
-      events.dispatchEvent(new Event('load-service-area:success', { detail: { serviceArea } }));
+      events?.dispatchEvent(new CustomEvent('load-service-area:success', { detail: { serviceArea } }));
     } catch (error) {
-      events.dispatchEvent(new Event('load-service-area:error', { detail: { error } }));
+      events?.dispatchEvent(new CustomEvent('load-service-area:error', { detail: { error } }));
     }
   },
 
-  _fetchServiceArea: async (events, retries = 3) => {
+  /**
+   * Internal method to fetch service area data with retry logic
+   * @param {number} retries - Number of retry attempts
+   * @returns {Promise<Object>} GeoJSON FeatureCollection of service area polygons
+   */
+  _fetchServiceArea: async (retries) => {
     try {
       const response = await fetch(serviceAreaUrl);
       if (!response.ok) {
@@ -85,7 +115,7 @@ const Bikeshare = {
       console.error('Error fetching Bikeshare service area:', error);
       if (retries > 0) {
         console.log(`Retrying... (${retries} attempts left)`);
-        return await Bikeshare._fetchServiceArea(events, retries - 1);
+        return await Bikeshare._fetchServiceArea(retries - 1);
       } else {
         console.error('Failed to fetch Bikeshare service area after multiple attempts.');
         throw error;
@@ -93,16 +123,29 @@ const Bikeshare = {
     }
   },
 
+  /**
+   * Get cached or fetch bikeshare stations
+   * @returns {Promise<Object>} GeoJSON FeatureCollection of stations
+   */
   getStations: async () => {
     await Bikeshare.fetchStations();
     return Bikeshare.stations;
   },
 
+  /**
+   * Get cached or fetch service area data
+   * @returns {Promise<Object>} GeoJSON FeatureCollection of service area polygons
+   */
   getServiceArea: async () => {
     await Bikeshare.fetchServiceArea();
     return Bikeshare.serviceArea;
   },
 
+  /**
+   * Check if a point is within the bikeshare service area
+   * @param {Object} point - GeoJSON Point feature
+   * @returns {Promise<boolean>} True if point is in service area
+   */
   pointIsInServiceArea: async (point) => {
     const serviceArea = await Bikeshare.getServiceArea();
 
@@ -116,6 +159,11 @@ const Bikeshare = {
     return turf.booleanPointInPolygon(point, serviceAreaFeature);
   },
 
+  /**
+   * Find the city jurisdiction for a given point
+   * @param {Object} point - GeoJSON Point feature
+   * @returns {Promise<string>} City name (boundary_name from service area data)
+   */
   findCityForPoint: async (point) => {
     const serviceArea = await Bikeshare.getServiceArea();
       
@@ -142,6 +190,12 @@ const Bikeshare = {
   },
 
   closestStationCache: {},
+  
+  /**
+   * Find the closest bikeshare station to a given point (with caching)
+   * @param {Object} point - GeoJSON Point feature
+   * @returns {Promise<Object>} Closest station feature
+   */
   closestStation: async (point) => {
     const stations = await Bikeshare.getStations();
 
@@ -160,7 +214,7 @@ const Bikeshare = {
       return current.distance < min.distance ? current : min;
     });
 
-    closestStationCache[coordsStr] = closest.station;
+    Bikeshare.closestStationCache[coordsStr] = closest.station;
 
     return closest.station;
   }
