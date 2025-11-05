@@ -2,9 +2,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js';
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBxGc-5vViXRVYX6AhUcoiPfdpilRKGROo",
@@ -18,7 +15,31 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initalize Firestore connection
+// Initalize Firestore connection. The following security policy is implemented
+// on the collection:
+//
+//   rules_version = '2';
+//   
+//   service cloud.firestore {
+//     match /databases/{database}/documents {
+//     
+//       match /suggestions/{document=**} {
+//       	// Anyone should be able to access the data in the collection.
+//         allow read: if true;
+//         
+//         // Ideally we could rate-limit the creates, but we want to make
+//         // adding a suggestions as low-friction as possible.
+//         allow create: if true;
+//         
+//         // There is currently no need for anyone to update or delete
+//         // documents in the collection. This may change with admin
+//         // features.
+//         allow update: if false;
+//         allow delete: if false;
+//       }
+//     
+//     }
+//   }
 const db = getFirestore(app);
   
 /**
