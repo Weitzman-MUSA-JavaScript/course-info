@@ -1,9 +1,29 @@
-// Mock backend service for demonstration
-// In a real application, this would connect to a backend API like Firebase, Supabase, etc.
+// Set up Firestore connection
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js';
 
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBxGc-5vViXRVYX6AhUcoiPfdpilRKGROo",
+  authDomain: "bikeshare-station-suggestions.firebaseapp.com",
+  projectId: "bikeshare-station-suggestions",
+  storageBucket: "bikeshare-station-suggestions.firebasestorage.app",
+  messagingSenderId: "43424665335",
+  appId: "1:43424665335:web:aa8b7904e61a3f36d54df2"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Initalize Firestore connection
+const db = getFirestore(app);
+  
 /**
- * Mock backend service for managing bikeshare station suggestions
- * Uses localStorage for data persistence in this demo
+ * Backend service for managing bikeshare station suggestions
+ * Uses Firestore for data persistence
  */
 const Backend = {
   suggestions: [],
@@ -20,17 +40,9 @@ const Backend = {
    * @param {string} suggestionData.timestamp - ISO timestamp
    * @param {Object|null} suggestionData.closestStation - Closest station info
    * @returns {Promise<Object>} The saved suggestion with generated ID
-   * @throws {Error} Network error simulation
+   * @throws {Error} Network error
    */
   async saveSuggestion(suggestionData) {
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 1000));
-
-    // Simulate occasional errors (5% chance)
-    if (Math.random() < 0.05) {
-      throw new Error('Network error - please try again');
-    }
-
     // Create suggestion record
     const suggestion = {
       id: `suggestion_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
@@ -39,10 +51,15 @@ const Backend = {
       submittedAt: new Date().toISOString()
     };
 
-    // Save to localStorage (simulating database)
-    const suggestions = JSON.parse(localStorage.getItem('bikeshare-suggestions') || '[]');
-    suggestions.push(suggestion);
-    localStorage.setItem('bikeshare-suggestions', JSON.stringify(suggestions));
+    // Save to Firestore
+    try {
+      const coll = collection(db, "suggestions");
+      const docRef = await addDoc(coll, suggestion);
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      throw new Error('Network error - please try again');
+    }
 
     // Also keep in-memory copy for this session
     Backend.suggestions.push(suggestion);
@@ -58,10 +75,11 @@ const Backend = {
    * @returns {Promise<Array>} Array of all suggestion objects
    */
   async _loadSuggestionsHelper() {
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 500));
+    const coll = collection(db, "suggestions");
+    const querySnapshot = await getDocs(coll);
+    const suggestions = querySnapshot.docs.map(doc => doc.data());
 
-    const suggestions = JSON.parse(localStorage.getItem('bikeshare-suggestions') || '[]');
+    console.log('Suggestions loaded:', suggestions);
     return suggestions;
   },
 
@@ -75,6 +93,7 @@ const Backend = {
       Backend.suggestions = suggestions;
       events.dispatchEvent(new CustomEvent('load-suggestions:success', { detail: { suggestions } }));
     } catch (error) {
+      console.error('Error loading suggestions:', error);
       events.dispatchEvent(new CustomEvent('load-suggestions:error', { detail: { error } }));
     }
   },
@@ -183,53 +202,5 @@ const Backend = {
     };
   }
 };
-
-// Add some demo data if none exists
-if (JSON.parse(localStorage.getItem('bikeshare-suggestions') || '[]').length === 0) {
-  // Add a few sample suggestions for demo purposes
-  const sampleSuggestions = [
-    {
-      id: 'demo_1',
-      location: {
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [-71.0589, 42.3601]
-        }
-      },
-      city: 'Boston',
-      inServiceArea: true,
-      reasonNew: 'transit-connection',
-      comments: 'Near the Common - lots of foot traffic',
-      timestamp: new Date(Date.now() - 86400000).toISOString(), // 1 day ago
-      status: 'submitted',
-      submittedAt: new Date(Date.now() - 86400000).toISOString()
-    },
-    {
-      id: 'demo_2', 
-      location: {
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [-71.0942, 42.3398]
-        }
-      },
-      city: 'Cambridge',
-      inServiceArea: true,
-      reasonNearExisting: 'often-full-empty',
-      comments: 'Harvard Square station is always full during rush hour',
-      timestamp: new Date(Date.now() - 172800000).toISOString(), // 2 days ago
-      status: 'submitted',
-      submittedAt: new Date(Date.now() - 172800000).toISOString(),
-      closestStation: {
-        id: '67',
-        name: 'Harvard Square at Mass Ave/ Dunster',
-        distance: 150
-      }
-    }
-  ];
-  
-  localStorage.setItem('bikeshare-suggestions', JSON.stringify(sampleSuggestions));
-}
 
 export { Backend };
