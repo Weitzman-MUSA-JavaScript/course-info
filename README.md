@@ -134,11 +134,11 @@ There will be additional resources on topics covered in the class in the _[resou
 | **7** | **08&nbsp;Oct** | Map Tiles |  |
 | **8** | **15&nbsp;Oct** | Browser APIs (Geolocation) |  |
 |   |  | 3rd-party APIs (Routing, Geocoding) |  |
-| **9** | **22&nbsp;Oct** | Browser-based data persistence (in-memory, session, and local storage) |  |
-|   |  | Firestore for data persistance |  |
-| **10** | **29&nbsp;Oct** | Reactive JavaScript patterns |  |
-| **11** | **05&nbsp;Nov** |  |  |
-| **12** | **12&nbsp;Nov** |  |  |
+| **9** | **22&nbsp;Oct** | Case Study: Engagement Project |  |
+| **10** | **29&nbsp;Oct** | Browser-based data persistence (in-memory, session, and local storage) |  |
+| **11** | **05&nbsp;Nov** | Back-end as a Service (Firebase, Supabase) |  |
+|   |  | Remote data persistence (Firestore) |  |
+| **12** | **12&nbsp;Nov** | Reactive JavaScript patterns |  |
 | **13** | **19&nbsp;Nov** |  |  |
 |        | ~~26&nbsp;Nov~~ | (No class) |  |
 | **14** | **03&nbsp;Dec** | Project presentations |  |
