@@ -116,6 +116,7 @@ There will be additional resources on topics covered in the class in the _[resou
 |   |  | Intro to Web Tech | <li> Put together an HTML page structure<br><li> Use simple semantic tags (p, ul/ol/li, h1-6, section, header, footer, main, ...)<br><li> Use semantic tags with attributes (a, img, ...) |
 |   |  | Intro to Web Accessibility | <li> Use references (e.g. a11yproject, accessibility-developer-guide)<br><li> Use an accessibility checker (e.g. Axe)<br><li> Understand that an accessibility checker won't catch everything |
 |   |  | Intro CSS (selectors, units, and colors) | <li> Use generic HTML containers (div/span)<br><li> Use id attributes to uniquely identify elements<br><li> Use class attributes to group elements together<br><li> Filter/select elements based on their tag, class, id, or attributes<br><li> Identify when to use which units<br><li> Recognize hex-coded colors<br><li> Find HTML color labels |
+|   |  | **_Project Introduction: Story Map_** |   |
 | **3** | **10&nbsp;Sep** | Using JavaScript on the Web | <li> Create a script file to link to an HTML page<br><li> Find resources on JS syntax and language<br><li> Explain what a library is (a framework is a big library, a module is a small library)<br><li> Explain what a CDN is<br><li> Use script and link tags to include a JS library<br><li> Use import statements to include a JS library |
 |   |  | Intro to Web Maps | <li> Import Leaflet for use (via a script tag or an import statement)<br><li> Use the ID of an element to add a Leaflet map to a page<br><li> Use the querySelector function to add a Leaflet map to a page |
 |   |  | The GeoJSON Data Format | <li> Explain the difference between a JSON string vs object<br><li> Explain the relationship between JSON and GeoJSON<br><li> Identify the components of a GeoJSON object<br><li> Explain the relationship between GeoJSON geometries, geometry collections, features, and feature collections<br><li> Add GeoJSON to a map and style it parammetrically |
@@ -129,17 +130,19 @@ There will be additional resources on topics covered in the class in the _[resou
 |   |  | Charting libraries | <li> Name some of the available charting libraries<br><li> Understand what some of the pieces of D3 are for |
 |   |  | Asynchronous Behavior #1 (events) | <li> Use on... HTML attributes to trigger JS<br><li> Use addEventListener to trigger JS (on map and layer objects)<br><li> Explain the impact of variable scoping (like functions within modules) |
 |   |  | Organizing JavaScript Using Modules | <li> Use import and export statements to organize code into modules<br><li>Identify distinct "components" within an application's design |
+|   |  | **_Project Introduction: Dashboard_** | <li>Discussing the strengths and weaknesses of dashboards</li> |
 | **6** | **01&nbsp;Oct** | DOM Manipulation | <li> Query for elements in the DOM<br><li> Insert new DOM elements into the document<br><li> Remove elements from the document<br><li> Work with elements that are disconnected from the document |
 |   |  | Asynchronous behavior #2 (requests) | <li> Format a request URL with query string parameters<br><li> Use GET and POST requests using an options object<br><li> Explain the Promise vs async/await syntax of fetch<br><li> Work with fetched data (e.g. conver to GeoJSON or chart config) |
 | **7** | **08&nbsp;Oct** | Map Tiles |  |
 | **8** | **15&nbsp;Oct** | Browser APIs (Geolocation) |  |
 |   |  | 3rd-party APIs (Routing, Geocoding) |  |
-| **9** | **22&nbsp;Oct** | Case Study: Engagement Project |  |
+| **9** | **22&nbsp;Oct** | **_Project Introduction: Engagement_** | <li>Case Study: Bikeshare Station Suggestion Tool</li> |
 | **10** | **29&nbsp;Oct** | Browser-based data persistence (in-memory, session, and local storage) |  |
 | **11** | **05&nbsp;Nov** | Back-end as a Service (Firebase, Supabase) |  |
 |   |  | Remote data persistence (Firestore) |  |
 | **12** | **12&nbsp;Nov** | Reactive JavaScript patterns |  |
-| **13** | **19&nbsp;Nov** |  |  |
+|   |  | Front-end build tools |  |
+| **13** | **19&nbsp;Nov** |  GIS Day @ Van Pelt, RDDSx |  |
 |        | ~~26&nbsp;Nov~~ | (No class) |  |
 | **14** | **03&nbsp;Dec** | Project presentations |  |
 <!--
