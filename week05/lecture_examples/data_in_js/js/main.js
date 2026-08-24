@@ -1,4 +1,5 @@
 import * as turf from 'https://cdn.jsdelivr.net/npm/@turf/turf@7.1.0/+esm';
+import chartjs from 'https://cdn.jsdelivr.net/npm/chart.js@4.5.0/+esm';
 
 const mapEl = document.querySelector('#map');
 const map = L.map(mapEl, {zoomSnap: 0});

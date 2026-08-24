@@ -1,4 +1,34 @@
-## Practice
+## Before Class...
+
+### Watch
+
+* Intro to Web Maps -- ([video](https://share.descript.com/view/c5q4jtZliwP), ~52min)
+* The GeoJSON Data Format -- ([video](https://share.descript.com/view/8DXBwN2Lg67), ~46min)
+
+### Read
+
+From [JavaScript.info](https://javascript.info/):
+* Part 1, Chapter 4 -- Objects: the basics **(only section 4.1 is _necessary_, but the rest are _recommended_)**
+* Part 1, Chapter 5 -- Data types **(specifically sections 5.2, 5.3, and 5.4 -- the rest are optional, but _recommended_)**
+
+**Optional:** From [Introduction to Web Mapping](https://bgu-geography.com/web-mapping/):
+* Chapter 7 -- GeoJSON, https://bgu-geography.com/web-mapping/geojson-1.html
+
+### Practice
+
+* JavaScript Exercises
+  * Try to get through at least **parts 2 and 3** of the JavaScript [exercises repository](https://github.com/Weitzman-MUSA-JavaScript/intro-js-exercises).
+
+    > **AI recommendation: DISABLE** -- The exercises in this repository will be absolutely trivial for any AI agent to complete, but that is so far from the point. The goal is for you to start getting comfortable thinking in JavaScript. **I recommend entirely disabling any AI assistance, even auto-complete, while working through these exercises.**
+
+
+## In Class...
+
+### Review
+
+* **JavaScript Exercises** -- We will review the **basic functions** and **iterators** exercises from the JavaScript [exercises repository](https://github.com/Weitzman-MUSA-JavaScript/intro-js-exercises).
+
+### Practice
 
 In this exercise you'll create a simple choropleth map to display county-level election results in Pennsylvania from the 2020 US presidential election. The data was sourced from the [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ) (via the [MIT Election Data + Science Lab](https://electionlab.mit.edu/data) clearing house).
 
@@ -19,17 +49,7 @@ In this exercise you'll create a simple choropleth map to display county-level e
 
 This exercise used Leaflet to create a choropleth map. There is a tutorial from Points Unknown that walks through the steps of creating a choropleth map using Mapbox GL JS. You can find that tutorial [here](https://pointsunknown.nyc/web%20mapping/mapbox/python/pandas/geopandas/2021/07/14/08A_WebmappingElectionData.html).
 
-## Videos
-
-- Introduction to CSS Layouts - ([video](https://share.descript.com/view/epmjwwWCJPj), ~44 min)
-- SVG, Canvas, and Map Accessibility - _Coming Soon_
-
 ## References
 
-- MDN Inline Elements - https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics _(Anything else on that page that's not in the inline text semantics section is a block-level element)_
-- Flexbox Froggy - https://flexboxfroggy.com/
-- Digital Ocean Flexbox Cheat Sheet - https://www.digitalocean.com/community/cheatsheets/css-flexbox
-- CSS Tricks Flexbox Guide - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- Grid Garden - https://cssgridgarden.com/
-- Digital Ocean Grid Layout Intro - https://www.digitalocean.com/community/tutorials/css-css-grid-layout-intro
-- Design Patterns for Effective Map UX - https://www.mapuipatterns.com/
+* _JavaScript modules_, from MDN Web Docs - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+* The GeoJSON Specification, https://datatracker.ietf.org/doc/html/rfc7946
