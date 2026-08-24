@@ -1,0 +1,70 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+.legend {
+  width: min-content;
+  background-color: rgba(255 255 255 / 0.7);
+  border: 1px solid silver;
+  border-radius: 0.25rem;
+  padding: 0 1rem;
+}
+
+.legend h2 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.legend-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.legend-entry {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.legend-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+#majority-threshold {
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .legend {
+    margin-left: 10px; /* Same as Leaflet puts on the right */
+    width: auto;
+  }
+}
+
+@media screen and (max-height: 425px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
