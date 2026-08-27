@@ -106,6 +106,7 @@ Beyond (and, in my opinion, more important than) a grade, more thorough, practic
   * [Node.js](https://nodejs.org/en/download/)
 * **AI Coding Assistants (Optional but Recommended)**
   * Tools like ChatGPT, Claude, or GitHub Copilot (to be used responsibly for exploring repositories, debugging, and cementing concepts as we will discuss in class)
+  * I encourage you to use these [agent skills](https://github.com/Weitzman-MUSA-JavaScript/student-agent-skills) when using an AI coding assistant or other LLM tool
 
 ## Supplementary Resources
 
