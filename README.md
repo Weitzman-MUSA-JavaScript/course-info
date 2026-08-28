@@ -57,17 +57,17 @@ Your core portfolio for this class will consist of three individual projects. To
 
 While each project has a suggested structure, I am very open to self-directed proposals that align with your interests, provided they utilize the tools we are learning. Together, these projects represent three critical classes of interface responsibilities that conscientious builders of civic technology must master:
 
-1.  **Telling a Narrative** -- Interfaces that communicate a narrative. You will choose a dataset and create an interactive experience that guides users through the insights and patterns within the data. You will present this narrative accessibly using maps, text, and multimedia. _The focus of this project is storytelling with data._
+1.  **Telling a Narrative** ([starter repo](https://github.com/Weitzman-MUSA-JavaScript/story-map-project)) -- Interfaces that communicate a narrative. You will choose a dataset and create an interactive experience that guides users through the insights and patterns within the data. You will present this narrative accessibly using maps, text, and multimedia. _The focus of this project is storytelling with data._
 
     > *Note:* Because you will just be getting started with HTML, CSS, JavaScript, and working with data in the browser, I will provide a couple of starter templates (such as a scrolly-telling layout or a click-through story map). At a minimum, you can focus simply on integrating GeoJSON datasets into one of these templates. However, if you want to stretch out of your comfort zone and make further modifications to the provided templates -- or use other templates you find elsewhere -- I will fully support you in doing so.
 
     _**Weeks 1-4** will be spent working on this project._
 
-2.  **Supporting Decisions** -- Interfaces that support decision-making. You will use data to build visualizations and analyses that help users make informed choices. While dashboards are a common tool for this (and we will discuss them in class), a dashboard is not the only way to provide data for making decisions. You are encouraged to build whatever type of interactive tool best fits your use case, provided the focus remains on ensuring the right information is presented to the user in the right time and context. _The focus of this project is actionable data delivery._
+2.  **Supporting Decisions** ([starter repo](https://github.com/Weitzman-MUSA-JavaScript/dashboard-project)) -- Interfaces that support decision-making. You will use data to build visualizations and analyses that help users make informed choices. While dashboards are a common tool for this (and we will discuss them in class), a dashboard is not the only way to provide data for making decisions. You are encouraged to build whatever type of interactive tool best fits your use case, provided the focus remains on ensuring the right information is presented to the user in the right time and context. _The focus of this project is actionable data delivery._
 
     _**Weeks 5-8** will be spent working on this project._
 
-3.  **Inviting Participation** -- Interfaces that enable participation and collaboration. Your final project will focus on engaging the public around data. Building upon the concepts learned throughout the class, you will incorporate a significant amount of interactivity to invite members of the public to create, manipulate, or add to a dataset in some way. 
+3.  **Inviting Participation** ([starter repo](https://github.com/Weitzman-MUSA-JavaScript/engagement-project)) -- Interfaces that enable participation and collaboration. Your final project will focus on engaging the public around data. Building upon the concepts learned throughout the class, you will incorporate a significant amount of interactivity to invite members of the public to create, manipulate, or add to a dataset in some way. 
 
     Final projects may be done in groups or independently. Criteria for success will be hammered out in a final project proposal. Group projects will be expected to engage with a wider scope and greater difficulty. _The focus of this project is public engagement and data generation._
 
