@@ -2,9 +2,45 @@
 
 ### Watch
 
-- Introduction to CSS Layouts - ([video](https://share.descript.com/view/epmjwwWCJPj), ~44 min)
-- Responding to User Events in JavaScript -- ([video](https://share.descript.com/view/X22VUMWF8Nl), ~35 min)
-- SVG, Canvas, and Map Accessibility - _Coming Soon_
+- **Introduction to CSS Layouts** - ([video](https://share.descript.com/view/epmjwwWCJPj), ~44 min)
+  - 00:00 — Introduction: Layout Frameworks in CSS
+  - 00:24 — The Box Model
+  - 03:20 — Block Elements
+  - 09:38 — Box Sizing: content-box vs. border-box
+  - 14:04 — Inline Elements
+  - 19:35 — The Flexbox Framework
+  - 28:11 — Grid Framework
+  - 29:15 — CSS Positioning: Static & Relative
+  - 32:34 — CSS Positioning: Absolute
+  - 34:31 — CSS Positioning: Fixed
+  - 37:06 — CSS Positioning: Sticky
+- **Working with Data in JavaScript (pt. 1)** -- ([video](https://share.descript.com/view/OWy4U1lVLmb), 131 min -- _PLEASE WATCH THIS AT 1.5x SPEED, IT'S SO LONG 😭_)
+  - 0:00 - Introduction: Why Transform Data in JavaScript
+  - 1:54 - Exploring the Datasets: Indego GBFS & Philly Neighborhoods
+  - 6:59 - Project Setup: HTML/CSS Scaffolding
+  - 21:44 - Initializing the Leaflet Map
+  - 26:40 - Fetching & Rendering Neighborhood GeoJSON
+  - 38:44 - Understanding Data Standards: GBFS & GTFS
+  - 46:52 - Converting GBFS Stations to GeoJSON Features
+  - 1:03:56 - Debugging a JavaScript Error
+  - 1:13:43 - Styling Station Markers
+  - 1:17:31 - Adding Tooltips: Name & Density
+  - 1:25:14 - Calculating Area with Turf.js
+  - 1:37:15 - Spatial Join: Filtering Stations by Neighborhood
+  - 1:47:42 - Pre-calculating Density with forEach
+  - 1:57:31 - Handling Missing/Async Data Gracefully
+  - 2:05:28 - Fitting Map Bounds & Wrap-up
+- **Responding to User Events in JavaScript** -- ([video](https://share.descript.com/view/X22VUMWF8Nl), ~35 min)
+  - 0:00 — Introduction: From Framework Interactivity to Custom Events
+  - 0:28 — Types of JavaScript Events
+  - 1:56 — Two Ways to Attach Event Handlers
+  - 2:09 — HTML Attributes Event Handlers
+  - 9:46 — JavaScript Object Property Event Handlers
+  - 16:37 — The addEventListener Function
+  - 19:31 — Note #1: The style Property in JS
+  - 21:39 — Note #2: Accessing the Interacted Element from an Event Handler
+  - 27:20 — Note #3: Calling vs. Referencing Functions
+- **SVG, Canvas, and Map Accessibility** - _Coming Soon_
 
 ### Practice
 

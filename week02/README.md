@@ -2,10 +2,44 @@
 
 ### Watch
 
-* Designing for the user: ([video](https://share.descript.com/view/xMB36Pljo2i), ~8min) ([slides](https://docs.google.com/presentation/d/1XoJzoDlC32x64kwSueUPlcn8iT4nBMp_XCCfnQUZhWs/edit?usp=sharing))
-* Introduction to HTML: ([video](https://share.descript.com/view/Y8DeQS27PTm), ~31min) ([slides](https://docs.google.com/presentation/d/1V9VtReNTHLSYCwVcq84OpT2LCghTapSXtJ7IGUIL0E0/edit?usp=sharing))
-* Introduction to CSS: ([video](https://share.descript.com/view/lu04aNn2QZa), ~1h 10min)
-* Web Accessibility: Instead of a custom video, please watch this excellent [Accessible Web Mapping Apps](https://www.youtube.com/watch?v=McXvs3x2-6E) video from the ESRI Developer Summit a few years ago (~1h).
+* **Designing for the user:** ([video](https://share.descript.com/view/xMB36Pljo2i), ~8min) ([slides](https://docs.google.com/presentation/d/1XoJzoDlC32x64kwSueUPlcn8iT4nBMp_XCCfnQUZhWs/edit?usp=sharing))
+  * 0:00 — Introduction: Designing for Users
+  * 1:27 — Why UX Matters (18F Guide)
+  * 2:14 — Starting with Research
+  * 2:50 — Key Research Questions
+  * 4:06 — Personas
+  * 6:03 — Wireframes
+  * 6:47 — Prototypes
+  * 7:56 — Additional Resources
+* **Introduction to HTML:** ([video](https://share.descript.com/view/Y8DeQS27PTm), ~31min) ([slides](https://docs.google.com/presentation/d/1V9VtReNTHLSYCwVcq84OpT2LCghTapSXtJ7IGUIL0E0/edit?usp=sharing))
+  * 0:00 — Introduction
+  * 1:01 — History of HTML
+  * 2:59 — Basic Document Structure
+  * 6:40 — Element Relationships (Parent, Child, Sibling)
+  * 8:39 — HTML Jargon: Elements, Tags & Attributes
+  * 14:58 — ID and Class Attributes
+  * 17:13 — Semantic Tags
+  * 25:49 — Separation of Concerns (CSS & JavaScript)
+* **Introduction to CSS:** ([video](https://share.descript.com/view/lu04aNn2QZa), ~1h 10min)
+  * 4:36 — Selectors
+  * 7:23 — Tag Name Selectors
+  * 7:53 — ID Selectors
+  * 8:53 — Class Selectors
+  * 9:36 — Attribute Selectors
+  * 10:14 — Universal Selector
+  * 10:44 — Relational Selectors
+  * 14:24 — Custom Semantics Using CSS Classes
+  * 30:28 — Numeric Units and Color Formats
+  * 31:48 — Absolute Numeric Units
+  * 40:56 — Font-size Relative Units
+  * 45:23 — Viewport Relative Units
+  * 48:14 — Percentages
+  * 54:17 — Colors
+  * 54:52 — Named Colors
+  * 57:17 — rgb-function Color Notation
+  * 1:02:11 — Hex-code Color Notation
+  * 1:04:11 — Hexidecimal Numbers
+* **Web Accessibility:** Instead of a custom video, please watch this excellent [Accessible Web Mapping Apps](https://www.youtube.com/watch?v=McXvs3x2-6E) video from the ESRI Developer Summit a few years ago (~1h).
 
 ### Read
 

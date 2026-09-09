@@ -2,8 +2,25 @@
 
 ### Watch
 
-* Intro to Web Maps -- ([video](https://share.descript.com/view/c5q4jtZliwP), ~52min)
-* The GeoJSON Data Format -- ([video](https://share.descript.com/view/8DXBwN2Lg67), ~46min)
+* **Intro to Web Maps** -- ([video](https://share.descript.com/view/c5q4jtZliwP), ~52min)
+  * 0:00 — Setting Up Your HTML & JavaScript
+  * 10:38 — Libraries & Frameworks
+  * 11:32 — Leaflet Overview
+  * 13:31 — Adding Leaflet CSS & JS
+  * 19:21 — Creating the Map Container
+  * 24:10 — Initializing the Map
+  * 31:53 — Understanding Raster Map Tiles
+  * 39:55 — Zoom Levels Explained
+  * 42:15 — Map Tile Providers
+* **The GeoJSON Data Format** -- ([video](https://share.descript.com/view/8DXBwN2Lg67), ~46min)
+  * 0:00 – Introduction
+  * 1:15 – What is JSON?
+  * 4:18 – JSON vs. JavaScript Object Literals
+  * 11:31 – GeoJSON Geometries
+  * 18:48 – Features & Feature Collections
+  * 22:31 – GeoJSON in the Wild
+  * 26:44 – Converting Shapefiles to GeoJSON (QGIS)
+  * 41:51 – Vector vs. Raster Markers
 
 ### Read
 
