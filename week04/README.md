@@ -40,7 +40,6 @@
   - 19:31 — Note #1: The style Property in JS
   - 21:39 — Note #2: Accessing the Interacted Element from an Event Handler
   - 27:20 — Note #3: Calling vs. Referencing Functions
-- **SVG, Canvas, and Map Accessibility** - _Coming Soon_
 
 ### Practice
 
