@@ -20,7 +20,7 @@
   - 1:01:38 – Case-Insensitive Search
   - 1:05:21 – Preserving Checkbox State with Cached List Items
 
-- Dashboards Discussion (**optional, as we will discuss on Wednesday**; recorded from 2024 in-class discussion) ([video](https://share.descript.com/view/cEFZytGb1mr), ~45 min)
+<!-- - Dashboards Discussion (**optional, as we will discuss on Wednesday**; recorded from 2024 in-class discussion) ([video](https://share.descript.com/view/cEFZytGb1mr), ~45 min) -->
 
 #### Wireframing a Dashboard
 
