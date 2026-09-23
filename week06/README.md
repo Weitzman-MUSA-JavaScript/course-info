@@ -32,11 +32,22 @@
 ### Practice
 
 - JavaScript Exercises
+  - Complete the [DOM Exercises](https://github.com/Weitzman-MUSA-JavaScript/dom-exercises). Follow the instructions in the comments in [exercises/js/index.js](https://github.com/Weitzman-MUSA-JavaScript/dom-exercises/blob/main/exercises/js/index.js) to select and manipulate the Document Object Model (DOM) elements. Refer to the document structure in [exercises/index.html](https://github.com/Weitzman-MUSA-JavaScript/dom-exercises/blob/main/exercises/index.html).
+
+    > **AI recommendation: DISABLE** -- The exercises in this repository will be relatively trivial for any AI agent to complete. **I recommend entirely disabling any AI assistance, even auto-complete, while working through these exercises.**
+
   - Choose one or two of the **Part 2 - Manipulating Data** exercises in the [Data in JavaScript Exercises](https://github.com/Weitzman-MUSA-JavaScript/data-in-js-exercises/) repository.
 
     > **AI recommendation: EXPLORE** -- The exercises in this repository don't all have a single correct solution, but any AI agent will be able to come up with _some_ solution. I recommend attempting the exercises on your own.
     >
     > However, each exercise comes with some pre-existing instructional comments and scaffolding code. If you are going to use AI for anything, I recommend that you use the `/student-explore` skill to understand what the existing code does.
+
+## In-class
+
+### Review
+
+* **DOM Exercises** -- We will review the exercises (parts 1-5) from the [DOM exercises repository](https://github.com/Weitzman-MUSA-JavaScript/dom-exercises).
+* **Data in JavaScript Exercises** -- We will review the exercises (several from part 1, and maybe one from part 2) from the [Data in JavaScript Exercises repository](https://github.com/Weitzman-MUSA-JavaScript/data-in-js-exercises/).
 
 ## References
 

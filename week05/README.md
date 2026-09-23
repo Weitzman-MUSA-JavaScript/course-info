@@ -43,6 +43,7 @@
 
 - Dashboards discussion ([slides](https://docs.google.com/presentation/d/1adY37iyr4z96BOEJGs4G3BY21pN5ANmkIxqU9kgJVuE/edit?usp=sharing))
 - Decision Support Project introduction: <https://github.com/Weitzman-MUSA-JavaScript/dashboard-project>
+- DOM Exercises review: <https://github.com/Weitzman-MUSA-JavaScript/dom-exercises>
 - Data in JS Exercise (Part 1: Accessing Data) review: <https://github.com/Weitzman-MUSA-JavaScript/data-in-js-exercises>
 
 ## References
