@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History API Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem;
+            width: 100%;
+        }
+        input {
+            flex-grow: 1;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+        }
+        span {
+            background-color: #f0f0f0;
+            padding: 1rem 2rem;
+            border-radius: 0.25rem;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: normal;
+        }
+        ul {
+            font-family:'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>History API Example</h1>
+    </header>
+
+    <main>
+        <p>Enter a new path (or URL using the same domain) to push to the history stack:</p>
+        <form id="pushStateForm">
+            <label for="pushUrl">Enter a new path:</label>
+            <input type="text" id="pushUrl">
+            <button type="button" id="pushUrl">Push State</button>
+        </form>
+        <p>Enter a new path (or URL using the same domain) to replace the current history entry:</p>
+        <form id="replaceStateForm">
+            <label for="replaceUrl">Enter a new path:</label>
+            <input type="text" id="replaceUrl">
+            <button type="button" id="replaceUrlBtn">Replace State</button>
+        </form>
+        <p>
+            The current URL is:
+            <span id="currentUrl"></span>
+        </p>
+        <p>
+            The URL stack:
+            <ul id="urlStack"></ul>
+        </p>
+    </main>
+
+    <script>
+        const currentUrlEl = document.getElementById('currentUrl');
+        const pushUrlBtn = document.getElementById('pushUrl');
+        const pushUrlInput = document.getElementById('pushUrl');
+        const pushStateForm = document.getElementById('pushStateForm');
+        const replaceUrlBtn = document.getElementById('replaceUrlBtn');
+        const replaceUrlInput = document.getElementById('replaceUrl');
+        const replaceStateForm = document.getElementById('replaceStateForm');
+        const urlStackEl = document.getElementById('urlStack');
+        const urlStack = [window.location.href];
+        let urlIndex = 0;
+
+        function showCurrentUrl() {
+            currentUrlEl.textContent = window.location.href;
+        }
+
+        function showUrlStack() {
+            urlStackEl.innerHTML = '';
+            for (let i = 0; i < urlStack.length; i++) {
+                const li = document.createElement('li');
+                li.textContent = urlStack[i];
+                urlStackEl.prepend(li);
+            }
+        }
+
+        function pushUrl() {
+            const pushUrl = pushUrlInput.value;
+            if (pushUrl) {
+                history.pushState(++urlIndex, '', pushUrl);
+                urlStack.push(window.location.href);
+                showCurrentUrl();
+                showUrlStack();
+            }
+        }
+
+        function replaceUrl() {
+            const replaceUrl = replaceUrlInput.value;
+            if (replaceUrl) {
+                history.replaceState(urlIndex, '', replaceUrl);
+                urlStack[urlStack.length - 1] = window.location.href;
+                showCurrentUrl();
+                showUrlStack();
+            }
+        }
+
+        pushUrlBtn.addEventListener('click', pushUrl);
+        pushStateForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            pushUrl();
+        });
+        replaceUrlBtn.addEventListener('click', replaceUrl);
+        replaceStateForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            replaceUrl();
+        });
+        window.addEventListener('popstate', (evt) => {
+            const evtUrlIndex = evt.state;
+            if (!evtUrlIndex || urlIndex > evtUrlIndex) {
+                urlStack.pop();
+            } else {
+                urlStack.push(window.location.href);
+            }
+            urlIndex = evtUrlIndex || 0;
+            showCurrentUrl();
+            showUrlStack();
+        });
+        showCurrentUrl();
+        showUrlStack();
+
+    </script>
+
+</body>
+</html>
