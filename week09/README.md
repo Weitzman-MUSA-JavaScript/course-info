@@ -26,4 +26,5 @@
 
 # Resources
 
+- Transit App Blog, _How we turned public transit into a multiplayer game_ - https://blog.transitapp.com/autogo/
 - My bikeshare dashboard remote storage branch - https://github.com/mjumbewu/dashboard-project/tree/remote-storage-end
