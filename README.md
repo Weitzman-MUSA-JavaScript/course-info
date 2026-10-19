@@ -67,7 +67,7 @@ While each project has a suggested structure, I am very open to self-directed pr
 
     _**Weeks 5-8** will be spent working on this project._
 
-3.  **Inviting Participation** ([starter repo](https://github.com/Weitzman-MUSA-JavaScript/engagement-project)) -- Interfaces that enable participation and collaboration. Your final project will focus on engaging the public around data. Building upon the concepts learned throughout the class, you will incorporate a significant amount of interactivity to invite members of the public to create, manipulate, or add to a dataset in some way. 
+3.  **Inviting Participation** ([starter repo](https://github.com/Weitzman-MUSA-JavaScript/engagement-project)) -- Interfaces that enable participation and collaboration. Your final project will focus on engaging the public around data. Building upon the concepts learned throughout the class, you will incorporate a significant amount of interactivity to invite members of the public to create, manipulate, or add to a dataset in some way.
 
     Final projects may be done in groups or independently. Criteria for success will be hammered out in a final project proposal. Group projects will be expected to engage with a wider scope and greater difficulty. _The focus of this project is public engagement and data generation._
 
@@ -77,7 +77,7 @@ While each project has a suggested structure, I am very open to self-directed pr
 
 My primary target for this course is to help each of you learn how to create data-backed interfaces that inform, empower, and engage people in the real world. I want you all to become conscientious builders of civic technology. I believe the best way to achieve this is through practice, which is why the course is centered around the three interface responsibilities outlined above.
 
-Part of my job, however, is to evaluate your work and assign a grade. In data analysis, there is a concept called Goodhart's Law (which we will discuss when we get to dashboards) that states: *when a measure becomes a target, it ceases to be a good measure.* 
+Part of my job, however, is to evaluate your work and assign a grade. In data analysis, there is a concept called Goodhart's Law (which we will discuss when we get to dashboards) that states: *when a measure becomes a target, it ceases to be a good measure.*
 
 Your grade is, ostensibly, a measure of the quality of your work. Getting you to a good grade is not my target. In fact, your grade is a second-order measure. The quality of your work is itself merely a measure of whether you are learning and able to put into practice the things I want you to learn.
 
@@ -137,7 +137,7 @@ There will be additional resources on topics covered in the class in the _[resou
 | **5** | **23&nbsp;Sep** | DOM Manipulation<br>Charting libraries<br>Organizing JavaScript Using Modules<br>**_Project Introduction: Supporting Decisions_** | <li> Use filter, map, and reduce functions to manipulate data<br><li> Generate GeoJSON structures and chart configurations from other data formats<br><li> Use import and export statements to organize code into modules<br><li> Discuss the strengths, weaknesses, and alternatives to dashboards |
 | **6** | **30&nbsp;Sep** | Asynchronous behavior #2 (Requests, Timers) | <li> Query, insert, and remove elements in the DOM<br><li> Format a request URL with query string parameters<br><li> Use GET and POST requests<br><li> Explain the Promise vs async/await syntax of fetch |
 | **7** | **07&nbsp;Oct** | Map Tiles | <li> Render vector vs raster images (SVG vs Canvas) |
-| **8** | **14&nbsp;Oct** | Browser APIs (Geolocation)<br>3rd-party APIs (Routing, Geocoding) | <li> Access and utilize user geolocation data in the browser<br><li> Integrate external APIs for routing and address translation |
+| **8** | **14&nbsp;Oct** | **No in-person class; virtual lecture**<br>Browser APIs (Geolocation)<br>3rd-party APIs (Routing, Geocoding) | <li> Access and utilize user geolocation data in the browser<br><li> Integrate external APIs for routing and address translation |
 | **9** | **21&nbsp;Oct** | **_Project Introduction: Inviting Participation_**<br>Browser-based data persistence (in-memory, session, and local storage) | <li>Case Study: Bikeshare Station Suggestion Tool</li> |
 | **10** | **28&nbsp;Oct** | Back-end as a Service (Firebase, Supabase)<br>Remote data persistence (Firestore) | <li> Set up and utilize a BaaS backend to persist and sync user-generated data |
 | **11** | **04&nbsp;Nov** | Reactive JavaScript patterns | <li> Implement state management and reactive data binding |
@@ -154,11 +154,11 @@ In compliance with Penn's [Code of Academic Integrity](http://www.upenn.edu/acad
 
 ### Note about AI tools...
 
-I actually *want* you to use AI tools (like ChatGPT, Claude, or GitHub Copilot) in this class. You should use them to explore repositories, ask how to make modifications to code, and act as a personalized tutor to go deeper on concepts we discuss in class. 
+I actually *want* you to use AI tools (like ChatGPT, Claude, or GitHub Copilot) in this class. You should use them to explore repositories, ask how to make modifications to code, and act as a personalized tutor to go deeper on concepts we discuss in class.
 
 However, you must use a **responsible process**. This course is about learning to program and design interfaces, not just learning how to prompt an agent. When you use AI to help write code, you must:
 1. Make frequent Git commits so your progress is clear.
-2. Document your LLM context (either via code comments or PR descriptions). 
-3. **Deeply understand the code you are submitting.** 
+2. Document your LLM context (either via code comments or PR descriptions).
+3. **Deeply understand the code you are submitting.**
 
 Understand that these tools often make mistakes that can be difficult to identify if you don't know what you're doing. If you come to me or any other instructor to help debug something generated with AI, you must disclose the source of the code (we can usually tell anyway). The expectation is that you can explain *why* the code was written the way it was, not just that an AI generated it for you.

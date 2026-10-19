@@ -27,7 +27,8 @@
 ## Resources
 
 * Bikeshare dashboard [mockup for the live-coding](https://github.com/mjumbewu/dashboard-project/tree/2024-bikeshare/mockup)
-* Bikeshare dashboard [in-progress JS code](https://github.com/mjumbewu/dashboard-project/tree/2024-bikeshare/js)
 * The Noun Project - https://thenounproject.com/
   * "Bike" icon by [Yosua Bungaran](https://thenounproject.com/creator/yosuabungaran/) - https://thenounproject.com/icon/bike-7149629/
 * Mapbox raster tiles in Leaflet maps - [../resources/webmap-tips.md](../resources/webmap-tips.md)
+* _Cookies vs Local Storage in JavaScript_ - https://dev.to/diwakarkashyap/cookies-vs-local-storage-in-javascript-3m0h
+* Bikeshare dashboard [local storage branch](https://github.com/mjumbewu/dashboard-project/tree/local-storage-end)
