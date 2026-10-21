@@ -8,13 +8,13 @@
  *
  * =========================================================================
  * TODAY'S CODE-ALONG ROADMAP:
- * - Act 2: Connecting Firebase & writing pins with addDoc()
- * - Act 3: Reading pins & subscribing to live updates with onSnapshot()
- * - Act 4: Server-side filtering with query() and where()
+ * - Part 2: Connecting Firebase & writing pins with addDoc()
+ * - Part 3: Reading pins & subscribing to live updates with onSnapshot()
+ * - Part 4: Server-side filtering with query() and where()
  * =========================================================================
  */
 
-// TODO (Act 2): Import Firebase modules from Google CDN
+// TODO (Part 2): Import Firebase modules from Google CDN
 // import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js';
 // import {
 //   getFirestore,
@@ -30,7 +30,7 @@
 // } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js';
 // import { firebaseConfig } from './config.js';
 
-// TODO (Act 2): Initialize Firebase and Firestore database
+// TODO (Part 2): Initialize Firebase and Firestore database
 // const app = initializeApp(firebaseConfig);
 // const db = getFirestore(app);
 
@@ -135,7 +135,7 @@ export const Backend = {
    * Saves a new pin.
    *
    * Starter implementation: saves to browser localStorage.
-   * TODO (Act 2): Replace this with Firestore `addDoc(collection(db, 'vibe_pins'), pinData)`.
+   * TODO (Part 2): Replace this with Firestore `addDoc(collection(db, 'vibe_pins'), pinData)`.
    */
   async savePin(pinData) {
     console.log('[backend-starter] Saving pin to localStorage:', pinData);
@@ -164,7 +164,7 @@ export const Backend = {
    * Adds an endorsement (+1) to a pin.
    *
    * Starter implementation: updates localStorage.
-   * TODO (Act 3 stretch): Use Firestore `updateDoc` with `increment(delta)`.
+   * TODO (Part 3 stretch): Use Firestore `updateDoc` with `increment(delta)`.
    */
   async endorsePin(pinId, delta = 1) {
     console.log(`[backend-starter] Endorsing pin ${pinId} (+${delta})`);
@@ -181,8 +181,8 @@ export const Backend = {
    * Loads pins and dispatches `pins-updated` on the event bus.
    *
    * Starter implementation: reads localStorage.
-   * TODO (Act 3): Replace with real-time `onSnapshot(queryRef, (snapshot) => ...)`
-   * TODO (Act 4): Add server-side `where('vibeCategory', '==', filter)`
+   * TODO (Part 3): Replace with real-time `onSnapshot(queryRef, (snapshot) => ...)`
+   * TODO (Part 4): Add server-side `where('vibeCategory', '==', filter)`
    */
   async loadPins() {
     let pins = Backend._getLocalPins();

@@ -1,7 +1,4 @@
-# In-Class Activity: The Global Street Vibe Atlas 🌐✨
-
-**Remote Data Persistence**
-*MUSA 6110 / CPLN 6920 — JavaScript Programming for Planners & Designers*
+# In-Class Activity: The Global Street Vibe Atlas 🌐
 
 ## Overview
 
@@ -9,19 +6,17 @@ Welcome to the **Global Street Vibe Atlas**! This collaborative, in-class activi
 
 Everyone connects to the **same live Firestore database** (`global-vibes-collab-2026`) simultaneously. As you search for places anywhere on Earth and log sensory vibe pins (or click `"✨ Feel This Vibe"`), observations appear and pulse across everyone's 3D globes in real time.
 
-```text
-                  +----------------------------------------------+
-                  |         SHARED CLOUD FIRESTORE               |
-                  |     Project: global-vibes-collab-2026        |
-                  |     Collection: 'vibe_pins'                  |
-                  +----------------------------------------------+
-                         ^                         |
-        addDoc() (Act 2) |                         | onSnapshot() (Act 3)
-                         |                         v
-      +----------------------+          +----------------------+
-      |   Student A Laptop   |          |   Student B Laptop   |
-      | "Taipei Night Mkt"   |          |  (Live Pin Appears!) |
-      +----------------------+          +----------------------+
+```mermaid
+flowchart TD
+    DB[("<b>Shared Firestore DB</b><br>Project: global-vibes-collab-2026<br>Collection: 'vibe_pins'")]
+
+    subgraph Classroom[" "]
+        StudentA["<b>Student A Laptop</b><br>'Taipei Night Mkt'"]
+        StudentB["<b>Student B Laptop</b><br>(Live Pin Appears!)"]
+    end
+
+    StudentA -- "<code>addDoc()</code>" --> DB
+    DB -- "<code>onSnapshot()</code>" --> StudentB
 ```
 
 ## Running the Apps Locally
@@ -30,7 +25,7 @@ You can run either application using any local static web server (such as Python
 
 ## Classroom Walkthrough
 
-### Act 1 (00–15m): Exploring the 3D Globe, `instanceSettings`, and the Limits of `localStorage`
+### Part 1 (00–15m): Exploring the 3D Globe, setting up your instance, and the limits of `localStorage`
 
 1. **Spin the Globe:** Open `app/index.html`. Even without a Mapbox token, the app renders a 3D globe using MapLibre GL JS and OpenFreeMap vector tiles.
 2. **Customize Your Instance:** Open `js/config.js`:
@@ -38,11 +33,11 @@ You can run either application using any local static web server (such as Python
    - If you want to use Mapbox styles, enter your Mapbox public access token (in `config.js` or via the **⚙️ Settings** button in the header) and try changing `mapboxStyleId` to `'mapbox/dark-v11'` or `'mapbox/satellite-streets-v12'`. The `process_mapbox.js` module converts Mapbox vector tile styles to a format that can be used with MapLibre GL JS.
 3. **The Limits of Local Storage:** Click anywhere on the map (or search for a city) and drop a vibe pin. Refresh your browser—your pin is still there because it's saved in `localStorage`. But look at your neighbor's screen or the classroom projector: **nobody else can see your pin!** Why? Because `localStorage` is trapped inside your browser's private sandbox.
 
-### Act 2 (15–40m): Writing to Cloud Firestore with `addDoc()`
+### Part 2 (15–40m): Writing to Cloud Firestore with `addDoc()`
 
 Open `app/js/backend.js`. Let's replace the `localStorage` save function with Cloud Firestore:
 
-1. **Step 2A: Import Firebase from Google's CDN:**
+1. **Import Firebase from Google's CDN:**
    ```javascript
    import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js';
    import {
@@ -56,6 +51,7 @@ Open `app/js/backend.js`. Let's replace the `localStorage` save function with Cl
      doc,
      updateDoc,
      increment,
+     serverTimestamp,
    } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js';
    import { firebaseConfig } from './config.js';
 
@@ -64,14 +60,14 @@ Open `app/js/backend.js`. Let's replace the `localStorage` save function with Cl
    const COLLECTION_NAME = 'vibe_pins';
    ```
 
-2. **Step 2B: Implement `savePin(pinData)`:**
+2. **Implement `savePin(pinData)`:** Update the function to write data to the shared database rather than into your local storage.
    ```javascript
    async savePin(pinData) {
      console.log('Writing pin to Cloud Firestore...', pinData);
      const collRef = collection(db, COLLECTION_NAME);
      const docRef = await addDoc(collRef, {
        ...pinData,
-       submittedAt: new Date().toISOString(),
+       submittedAt: serverTimestamp(),
      });
 
      const savedPin = { id: docRef.id, ...pinData };
@@ -82,15 +78,15 @@ Open `app/js/backend.js`. Let's replace the `localStorage` save function with Cl
    }
    ```
 
-3. **Try It!** Search for a place anywhere in the world and submit a pin. Watch the instructor's screen as the Firebase Console lights up with records from across the classroom!
+3. **Try It!** Search for a place anywhere in the world and submit a pin. Watch the instructor's screen as the Firebase Console populates with records!
 
 ---
 
-### Act 3 (40–65m): Going Multiplayer with `onSnapshot()` ("`addEventListener` for Your Database")
+### Part 3 (40–65m): Going Multiplayer with `onSnapshot()` ("`addEventListener` for Your Database")
 
 Right now, our pins are safely stored in Google Cloud, but our map only loads pins from `localStorage`. Let's subscribe to real-time updates!
 
-1. **Step 3A: Replace `loadPins()` with `subscribeToPins()`:**
+1. **Replace `loadPins()` with `subscribeToPins()`:**
    ```javascript
    subscribeToPins(filter = 'all') {
      if (typeof Backend.unsubscribeSnapshot === 'function') {
@@ -116,13 +112,13 @@ Right now, our pins are safely stored in Google Cloud, but our map only loads pi
    }
    ```
 
-2. **Step 3B: Connect It in `init()`:**
+2. **Connect It in `init()`:**
    In `Backend.init()`, replace `await Backend.loadPins()` with:
    ```javascript
    Backend.subscribeToPins(initialFilter);
    ```
 
-3. **Shared Data ✨:** Look at your 3D globe! Suddenly, every pin logged by your classmates across the globe appears simultaneously without refreshing!
+3. **Shared Data ✨:** Look at your 3D globe; every pin logged by your classmates across the globe should appear simultaneously without refreshing!
 
 4. **Stretch Goal: Live Endorsements (`+1 Feel This Vibe`):**
    ```javascript
@@ -152,13 +148,13 @@ Right now, our pins are safely stored in Google Cloud, but our map only loads pi
    ```
    Now Google Cloud does the filtering on its servers before sending data across the wire!
 
+<!--
 2. **Connecting to Project 3: Inviting Participation:**
    Look at how our app answers the **5 Guiding Statements** from `INSTRUCTIONS.md`:
    - **Participants:** Urban explorers and travelers with on-the-ground knowledge of street corners.
    - **Invited Input:** Sensory observations (dominant vibe, energy rating, smell/sound description).
    - **Participant Benefit:** Shared discovery of hidden sanctuaries, street food, and music hubs worldwide.
-
----
+-->
 
 ## Reference Files in This Example
 

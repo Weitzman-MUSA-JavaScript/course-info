@@ -23,6 +23,7 @@ import {
   doc,
   updateDoc,
   increment,
+  serverTimestamp,
 } from 'https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js';
 import _ from 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/+esm';
 import { firebaseConfig } from './config.js';
@@ -141,7 +142,7 @@ export const Backend = {
       const collRef = collection(db, COLLECTION_NAME);
       const docPayload = {
         ...pinData,
-        submittedAt: pinData.submittedAt || new Date().toISOString(),
+        submittedAt: pinData.submittedAt || serverTimestamp(),
       };
 
       const docRef = await addDoc(collRef, docPayload);
