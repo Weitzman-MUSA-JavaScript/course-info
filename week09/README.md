@@ -32,4 +32,8 @@
 ## References
 
 * Transit App Blog, _How we turned public transit into a multiplayer game_ - <https://blog.transitapp.com/autogo/>
+* Firestore Security Rules...
+  * _Get started with Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/get-started>
+  * _Structuring Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/rules-structure>
+  * _Writing conditions for Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/rules-conditions>
 * Bikeshare dashboard [remote storage branch](https://github.com/mjumbewu/dashboard-project/tree/remote-storage-end)
