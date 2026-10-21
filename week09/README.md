@@ -36,4 +36,5 @@
   * _Get started with Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/get-started>
   * _Structuring Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/rules-structure>
   * _Writing conditions for Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/rules-conditions>
+  * _Add data to Cloud Firestore: Server Timestamp_ - <https://firebase.google.com/docs/firestore/manage-data/add-data#server_timestamp>
 * Bikeshare app [remote storage branch](https://github.com/mjumbewu/dashboard-project/tree/remote-storage-end)
