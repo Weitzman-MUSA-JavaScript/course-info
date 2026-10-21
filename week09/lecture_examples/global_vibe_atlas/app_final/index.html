@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Street Vibe Atlas</title>
+
+  <!-- Google Fonts: Gilda Display (serif), Courier Prime (mono), Roboto (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Gilda+Display&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- MapLibre GL JS v5 (supports 3D globe projection) -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@^5.0.0/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@^5.0.0/dist/maplibre-gl.js"></script>
+
+  <!-- Application Styles (MUSA Design Language) -->
+  <link rel="stylesheet" href="css/musa-base.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Main ES Module -->
+  <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="brand">
+        <h1 class="app-title">Global Street Vibe Atlas</h1>
+        <p class="app-tagline">Crowdsourcing the sensory character of street corners across the globe</p>
+      </div>
+      <div class="user-meta">
+        <span class="user-handle-badge" id="user-handle-badge" title="Click to change your contributor name">
+          👤 <span id="current-user-handle">Anonymous Explorer</span>
+        </span>
+        <button id="open-settings-btn" class="btn-settings" title="Instance Settings & Mapbox Key">⚙️ Settings</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Viewport Area -->
+  <main class="viewport-main">
+
+    <!-- Floating Top Controls Bar: Place Search & Vibe Lens Filter -->
+    <div class="map-floating-controls">
+      <!-- Debounced Global Place Search (Week 7/8 pattern) -->
+      <div class="search-container" id="search-container">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="place-search-input"
+            class="search-input"
+            placeholder="Search any city or street (e.g., Taipei, Mexico City)..."
+            autocomplete="off"
+          >
+          <button id="geolocate-btn" class="geolocate-btn" title="Jump to my location">📍</button>
+        </div>
+        <ul id="place-suggestions" class="suggestions-list hidden"></ul>
+      </div>
+
+      <!-- Curated Vibe Lens Filter Dropdown -->
+      <div class="filter-container">
+        <label for="vibe-filter-select" class="filter-label">Filter Vibe:</label>
+        <select id="vibe-filter-select" class="filter-select">
+          <option value="all">🌐 All Vibes</option>
+          <option value="night_market_food">🍜 Night Market & Street Food</option>
+          <option value="street_music_culture">🎺 Street Music & Culture</option>
+          <option value="nature_water_sanctuary">🌿 Quiet Sanctuary & Nature</option>
+          <option value="bustling_transit_chaos">⚡ Bustling Transit Energy</option>
+          <option value="cafe_third_place">☕ Cafe & Third Place</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- MapLibre 3D Globe Container -->
+    <div id="map" class="globe-map-container"></div>
+
+    <!-- Center Crosshair for Pin Placement -->
+    <div class="map-center-target" id="map-center-target" title="Center point for new vibe pin">
+      <div class="target-ring"></div>
+      <div class="target-dot"></div>
+    </div>
+
+    <!-- Floating Action Button to Open New Pin Form -->
+    <button id="drop-pin-btn" class="btn-drop-pin">
+      <span class="btn-icon">📍</span>
+      <span class="btn-text">Drop a Vibe Pin Here</span>
+    </button>
+
+    <!-- Sliding Content Panel (Bottom Sheet on Mobile, Side Panel on Desktop) -->
+    <aside id="content-panel" class="content-panel hidden">
+      <div class="panel-header">
+        <div class="panel-drag-handle"></div>
+        <h2 id="panel-title" class="panel-title">Location Information</h2>
+        <button id="close-panel-btn" class="close-panel-btn" title="Close panel">✕</button>
+      </div>
+      <div id="panel-body" class="panel-body">
+        <!-- Injected dynamically by vibe-panel.js -->
+      </div>
+    </aside>
+
+    <!-- Loading Overlay (MUSA Design Language) -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+      <div class="loading-box">
+        <div class="progress-bar-container indeterminate">
+          <div class="progress-bar"></div>
+        </div>
+        <p class="loading-text" id="loading-message">Loading the Global Atlas...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Settings / Mapbox Key Modal Dialog -->
+  <dialog id="settings-dialog" class="settings-dialog">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h3>Instance & User Settings</h3>
+        <button id="close-settings-dialog-btn" class="btn-close-dialog">✕</button>
+      </div>
+      <form id="settings-form" class="settings-form" method="dialog">
+        <div class="form-group">
+          <label for="setting-author-input">Your Contributor Name / Persona:</label>
+          <input type="text" id="setting-author-input" placeholder="e.g., Transit Advocate, Food Lover" required>
+          <small class="form-help">Saved in your browser's localStorage (Week 8) to attribute pins you submit.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="setting-token-input">Mapbox Access Token (Optional):</label>
+          <input type="password" id="setting-token-input" placeholder="pk.eyJ1...">
+          <small class="form-help">
+            Enter your public Mapbox token to render custom Mapbox styles via <code>process_mapbox.js</code> and use Mapbox Geocoding v6. If left empty, the globe automatically uses free open vector tiles!
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="setting-style-select">Mapbox Vector Style:</label>
+          <select id="setting-style-select">
+            <option value="mapbox/dark-v11">Mapbox Dark (mapbox/dark-v11)</option>
+            <option value="mapbox/satellite-streets-v12">Mapbox Satellite (mapbox/satellite-streets-v12)</option>
+            <option value="mapbox/streets-v12">Mapbox Streets (mapbox/streets-v12)</option>
+            <option value="mapbox/light-v11">Mapbox Light (mapbox/light-v11)</option>
+          </select>
+          <small class="form-help">Processed via <code>processMapboxStyle()</code> when token is present.</small>
+        </div>
+
+        <div class="dialog-actions">
+          <button type="submit" class="btn btn-primary" id="save-settings-btn">Save Settings</button>
+          <button type="button" class="btn btn-secondary" id="cancel-settings-btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+</body>
+</html>

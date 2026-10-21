@@ -26,6 +26,8 @@
 
 ## In Class...
 
+* **Collaborative In-Class Exercise: Global Street Vibe Atlas**
+  * Walkthrough and starter code: [lecture_examples/global_vibe_atlas/](lecture_examples/global_vibe_atlas/)
 * **Project Introduction: Inviting Participation**
   * Starter template and requirements: [Engagement Project Repository](https://github.com/Weitzman-MUSA-JavaScript/engagement-project)
 
