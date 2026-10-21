@@ -29,4 +29,4 @@
 ## References
 
 * _Cookies vs Local Storage in JavaScript_ - <https://dev.to/diwakarkashyap/cookies-vs-local-storage-in-javascript-3m0h>
-* Bikeshare dashboard [local storage branch](https://github.com/mjumbewu/dashboard-project/tree/local-storage-end)
+* Bikeshare app [local storage branch](https://github.com/mjumbewu/dashboard-project/tree/local-storage-end)

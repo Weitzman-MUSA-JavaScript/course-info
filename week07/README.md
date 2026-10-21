@@ -83,7 +83,7 @@
 
 ## References
 
-* Bikeshare dashboard [mockup for the live-coding](https://github.com/mjumbewu/dashboard-project/tree/2024-bikeshare/mockup)
+* Bikeshare app [mockup for the live-coding](https://github.com/mjumbewu/dashboard-project/tree/2024-bikeshare/mockup)
 * The Noun Project - <https://thenounproject.com/>
   * "Bike" icon by [Yosua Bungaran](https://thenounproject.com/creator/yosuabungaran/) - <https://thenounproject.com/icon/bike-7149629/>
 * Mapbox raster tiles in Leaflet maps - [../resources/webmap-tips.md](../resources/webmap-tips.md)

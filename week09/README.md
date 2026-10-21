@@ -36,4 +36,4 @@
   * _Get started with Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/get-started>
   * _Structuring Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/rules-structure>
   * _Writing conditions for Cloud Firestore Security Rules_ - <https://firebase.google.com/docs/firestore/security/rules-conditions>
-* Bikeshare dashboard [remote storage branch](https://github.com/mjumbewu/dashboard-project/tree/remote-storage-end)
+* Bikeshare app [remote storage branch](https://github.com/mjumbewu/dashboard-project/tree/remote-storage-end)
