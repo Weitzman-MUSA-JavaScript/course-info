@@ -30,6 +30,8 @@
   * Walkthrough and starter code: [lecture_examples/global_vibe_atlas/](lecture_examples/global_vibe_atlas/)
 * **Project Introduction: Inviting Participation**
   * Starter template and requirements: [Engagement Project Repository](https://github.com/Weitzman-MUSA-JavaScript/engagement-project)
+* **Case Study: Bike Share Suggestion Map**
+  * Slides: [Bike Share Suggestion Map Slides](https://docs.google.com/presentation/d/1NFuIkjJLV4zCNiLiXVjFma6_X3JSCvZpu5ggjnGWZUA/edit?usp=sharing)
 
 ## References
 
