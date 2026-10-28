@@ -15,9 +15,11 @@
       <input id="a0" class="cell" type="number" placeholder="A0">
       <input id="a1" class="cell" type="number" placeholder="A1">
       <input id="a2" class="cell" type="number" placeholder="A2">
-      <input id="a3" class="cell" type="number" placeholder="A3" readonly> <!-- Should contain the sum of A1 and A2 -->
+      <input id="a3" class="cell" type="number" placeholder="A3" readonly> <!-- Should contain the sum of A0, A1, and A2 -->
 
-      <p id="summary">The sum of ... and ... is ...</p>
+      <p id="summary">The new value of <code>a3</code> is &hellip;.
+        It was calculated by adding <code>a0</code>=&hellip;,
+        <code>a1</code>=&hellip;, and <code>a2</code>=&hellip;</p>
     </main>
 
     <script type="module">
@@ -31,22 +33,20 @@
       a1.value = 1;
       a2.value = 2;
 
-      function updateA3() {
-        a3.value = Number(a0.value) + Number(a1.value) + Number(a2.value);
-      }
+      /**
+       * Updates the value of a3 to be the sum of a0, a1, and a2.
+       */
+      function updateA3() {}
 
-      function updateSummary() {
-        summary.innerHTML = `The sum of ${a0.value}, ${a1.value} and ${a2.value} is ${a3.value}`;
-      }
+      /**
+       * Updates the summary paragraph to reflect the current value of a3.
+       */
+      function updateSummary() {}
 
-      a0.addEventListener('input', updateA3);
-      a1.addEventListener('input', updateA3);
-      a2.addEventListener('input', updateA3);
-      a0.addEventListener('input', updateSummary);
-      a1.addEventListener('input', updateSummary);
-      a2.addEventListener('input', updateSummary);
+      // React to input changes...
 
-      updateA3();
-      updateSummary();
+      // Initialize the values...
+
     </script>
+  </body>
 </html>
