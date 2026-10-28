@@ -16,11 +16,11 @@
       <input class="cell" type="number" placeholder="A0" v-model="a0">
       <input class="cell" type="number" placeholder="A1" v-model="a1">
       <input class="cell" type="number" placeholder="A2" v-model="a2">
-      <input class="cell" type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A1 and A2 -->
+      <input class="cell" type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A0, A1, and A2 -->
 
       <p>The new value of <code>a3</code> is {{ a3 }}.
-        It was calculated by adding {{a0}}, {{ a1 }},
-        and {{ a2 }}</p>
+        It was calculated by adding <code>a0</code>={{ a0 }},
+        <code>a1</code>={{ a1 }}, and <code>a2</code>={{ a2 }}</p>
     </main>
 
     <script>
@@ -41,4 +41,5 @@
 
       app.mount('#app-container');
     </script>
+  </body>
 </html>

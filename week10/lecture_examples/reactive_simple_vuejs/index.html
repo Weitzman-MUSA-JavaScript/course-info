@@ -16,9 +16,11 @@
       <input class="cell" type="number" placeholder="A0" v-model="a0">
       <input class="cell" type="number" placeholder="A1" v-model="a1">
       <input class="cell" type="number" placeholder="A2" v-model="a2">
-      <input class="cell" type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A1 and A2 -->
+      <input class="cell" type="number" placeholder="A3" v-model="a3" readonly> <!-- Should contain the sum of A0, A1, and A2 -->
 
-      <p>The sum of {{a0}}, {{a1}}, and {{a2}} is {{a3}}</p>
+      <p>The new value of <code>a3</code> is &hellip;.
+        It was calculated by adding <code>a0</code>=&hellip;,
+        <code>a1</code>=&hellip;, and <code>a2</code>=&hellip;</p>
     </main>
 
     <script>
@@ -29,9 +31,7 @@
           const a0 = ref(10);
           const a1 = ref(1);
           const a2 = ref(2);
-          const a3 = computed(() => {
-            return a0.value + a1.value + a2.value;
-          })
+          const a3 = computed(() => {})
 
           return { a0, a1, a2, a3 };
         }
@@ -41,4 +41,5 @@
 
       app.mount('#app-container');
     </script>
+  </body>
 </html>
